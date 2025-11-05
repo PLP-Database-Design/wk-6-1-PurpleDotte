@@ -26,7 +26,7 @@ Each group will be assigned a time slot by the instructor. Example:
 
 | Group | Time Slot       | Team Members         | Meeting Link      |
 |-------|-----------------|----------------------|-------------------|
-| A     | To be confirmed | [Member 1, 2, 3]     | [To be provided]  |
+| A     | 5                   | [Member 1, 2, 3]    | [https://powerlearnproject-org.zoom.us/j/82922318865?pwd=yjrDZhWpXBVwbkTD6IGKpVBIaEFYba.1]  |
 | B     | To be confirmed | [Member 4, 5, 6]     | [To be provided]  |
 | C     | To be confirmed | [Member 7, 8, 9]     | [To be provided]  |
 | ...   | ...             | ...                  | ...               |
@@ -222,3 +222,4 @@ Each group will be assigned a time slot by the instructor. Example:
 ---
 
 **Remember:** Meetings are your chance to get guidance, share progress, and de‑risk your submission. Come prepared and participate actively! 📅✨
+
