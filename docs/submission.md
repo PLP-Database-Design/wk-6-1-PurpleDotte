@@ -170,7 +170,7 @@ Full board configuration and issue creation and test cases will begin in week tw
 **Project:** Book Store App — Web Application QA Project  
 **Team Name:** RAID  
 **Document Version:** 1.0  
-**Date:** November 5, 2025  
+**Date:** November 6, 2025  
 **For:** Week 2 Test Execution
 
 ---
@@ -2290,7 +2290,7 @@ As you find bugs:
 ---
 
 **Document Prepared By:** RAID Team  
-**Date:** November 5, 2025  
+**Date:** November 6, 2025  
 **Status:** Ready for Week 2 Execution  
 **Next Action:** Begin executing Critical priority test cases and logging bugs in Jira
 
@@ -2355,6 +2355,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
