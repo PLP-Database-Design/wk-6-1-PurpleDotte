@@ -249,7 +249,8 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 **Evidence:** Screenshot of partial match results
 
----
+---<img width="1364" height="637" alt="TC-CAT-002 Search Functionality  Partial Match" src="https://github.com/user-attachments/assets/3f338b37-62b0-4443-ba59-b6edeabd69ea" />
+
 
 ### TC-CAT-003: Search with Diacritics (INTENTIONAL DEFECT)
 **Priority:** Medium  
@@ -2356,6 +2357,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
