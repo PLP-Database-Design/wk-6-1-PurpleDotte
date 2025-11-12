@@ -9,3 +9,4 @@
 <img width="1106" height="595" alt="TC-CART-002 Update Cart Quantity" src="https://github.com/user-attachments/assets/0848e07c-d725-4924-8188-c728ba5c61dd" />
 <img width="1201" height="537" alt="TC-CART-003 Stock Limit Enforcement" src="https://github.com/user-attachments/assets/01637c6f-c86a-4c64-9c31-dfa2eb1c56a8" />
 <img width="1060" height="678" alt="TC-CART-004 Mini-Cart Stock Race Condition (INTENTIONAL DEFECT)2" src="https://github.com/user-attachments/assets/eb6e3119-0b81-40bb-b61e-248a52bf9587" />
+<img width="1163" height="646" alt="TC-CART-005  Rounding Variance (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/3bb06a65-9e8e-400a-9091-30979ff53a98" />
