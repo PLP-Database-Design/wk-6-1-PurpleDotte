@@ -213,7 +213,7 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 **Steps:**
 1. Navigate to `/catalog`
-2. Enter exact book title in search field (e.g., "The Great Gatsby")
+2. Enter exact book title in search field (e.g., "The Great Gatsb")
 3. Press Enter or click Search button
 
 **Expected Result:**
@@ -237,7 +237,7 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 **Steps:**
 1. Navigate to `/catalog`
-2. Enter partial book title (e.g., "Great")
+2. Enter partial book title (e.g., "19")
 3. Press Enter
 
 **Expected Result:**
@@ -2357,6 +2357,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
