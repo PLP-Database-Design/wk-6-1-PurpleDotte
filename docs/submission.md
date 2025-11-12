@@ -301,7 +301,7 @@ Full board configuration and issue creation and test cases will begin in week tw
 **Evidence:** Screenshot of AND filter logic
 
 ---<img width="1357" height="663" alt="TC-CAT-004Filter by Genre with AND Logic fiction " src="https://github.com/user-attachments/assets/09c3be56-141a-45c7-bcd8-cce0bb98b087" />
-<img width="1342" height="569" alt="TC-CAT-004 Filter by Genre with AND Logic romance" src="https://github.com/user-attachments/assets/6d481ea9-27fb-4479-b692-aa6b56f8a1e1" />
+
 
 ### TC-CAT-005: Sort by Price - Ascending
 **Priority:** Medium  
@@ -2358,6 +2358,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
