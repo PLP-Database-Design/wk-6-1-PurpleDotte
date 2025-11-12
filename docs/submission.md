@@ -490,6 +490,9 @@ Full board configuration and issue creation and test cases will begin in week tw
 - Small rounding variance (±$0.01) may occur
 - Difference between line-by-line rounding and grand total rounding
 
+
+
+
 **Post-conditions:** Defect documented with variance amount
 
 **Evidence:** Screenshot with manual calculation vs system calculation
@@ -516,14 +519,42 @@ Full board configuration and issue creation and test cases will begin in week tw
 - Discount line appears in totals breakdown
 - Grand total reflects discount
 - Coupon persists after refresh
+ **Actual Result**
 
-**Post-conditions:** Coupon applied and saved
+No coupon entry field found in cart interface
+
+ Cannot enter coupon code "SAVE10"
+
+ No "Apply" button available
+
+ Coupon functionality not implemented in UI
+
+**Defect Details**
+
+Issue: Missing coupon/discount UI components
+
+Location: Cart page
+
+Impact: FR-O01 (Coupon functionality) not implemented
+
+Evidence: All provided screenshots show no coupon input field or apply button
+
+
+
+
+**Post-conditions:**  Test blocked - cannot proceed
+
+
+
+
+
+
 
 **Evidence:** Screenshot of applied coupon with discount
 
----
+---[Apply Expired Coupon.webm](https://github.com/user-attachments/assets/31b39f36-8b2f-4e62-b23c-75843dbdbaac)
 
-### TC-CART-007: Apply Expired Coupon
+### T-007TC-CAR: Apply Expired Coupon
 **Priority:** Medium  
 **FR Code:** FR-O01
 
@@ -544,7 +575,8 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 **Evidence:** Screenshot of expired coupon error
 
----
+--
+
 
 ### TC-CART-008: Minimum Basket Requirement
 **Priority:** Medium  
@@ -2368,6 +2400,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
