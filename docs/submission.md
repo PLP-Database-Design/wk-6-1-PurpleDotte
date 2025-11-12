@@ -320,10 +320,12 @@ Full board configuration and issue creation and test cases will begin in week tw
 - Sort indicator shows active sort field and direction
 - Ties are broken by stable sort (original order maintained)
 
-**Post-conditions:** Books sorted correctly
+**Post-conditions:** no price dropdown button found
 
+**Actual Result:** i was unable to sort book by prices,because  there is no price dropdown button
+ 
 **Evidence:** Screenshot of sorted results
-
+<img width="756" height="635" alt="TC-CAT-005 Sort by Price - Ascending" src="https://github.com/user-attachments/assets/190f42a7-6aff-4677-9dfc-0acb14950b2d" />
 ---
 
 ### TC-CAT-006: Image Lazy Loading (INTENTIONAL DEFECT)
@@ -355,7 +357,6 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 ---
 
-<a name="cart"></a>
 ## 2. CART & CHECKOUT TEST CASES
 
 ### TC-CART-001: Add Item to Cart
@@ -2358,6 +2359,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
