@@ -462,7 +462,8 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 **Evidence:** Screenshot/video of stock limit bypass in mini-cart
 
----
+---<img width="1060" height="678" alt="TC-CART-004 Mini-Cart Stock Race Condition (INTENTIONAL DEFECT)2" src="https://github.com/user-attachments/assets/eb6e3119-0b81-40bb-b61e-248a52bf9587" />
+
 
 ### TC-CART-005: Rounding Variance (INTENTIONAL DEFECT)
 **Priority:** Medium  
@@ -2366,6 +2367,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
