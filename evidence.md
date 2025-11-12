@@ -4,3 +4,5 @@
 <img width="1357" height="663" alt="TC-CAT-004Filter by Genre with AND Logic fiction " src="https://github.com/user-attachments/assets/09c3be56-141a-45c7-bcd8-cce0bb98b087" />
 <img width="1342" height="569" alt="TC-CAT-004 Filter by Genre with AND Logic romance" src="https://github.com/user-attachments/assets/6d481ea9-27fb-4479-b692-aa6b56f8a1e1" />
 <img width="756" height="635" alt="TC-CAT-005 Sort by Price - Ascending" src="https://github.com/user-attachments/assets/190f42a7-6aff-4677-9dfc-0acb14950b2d" />
+<img width="1256" height="683" alt="### TC-CAT-006 Image Lazy Loading (INTENTIONAL DEFECT) mobile" src="https://github.com/user-attachments/assets/f3b5e01f-fd5a-471c-ba67-bbfc7b203b69" />
+<img width="1357" height="716" alt="### TC-CAT-006 Image Lazy Loading (INTENTIONAL DEFECT)  desktop" src="https://github.com/user-attachments/assets/8c1dec24-6e44-4cae-9d6e-d71fdde0d1df" />
