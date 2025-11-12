@@ -494,7 +494,8 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 **Evidence:** Screenshot with manual calculation vs system calculation
 
----
+---<img width="1163" height="646" alt="TC-CART-005  Rounding Variance (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/3bb06a65-9e8e-400a-9091-30979ff53a98" />
+
 
 ### TC-CART-006: Apply Valid Coupon
 **Priority:** High  
@@ -2367,6 +2368,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
