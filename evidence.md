@@ -6,3 +6,5 @@
 <img width="756" height="635" alt="TC-CAT-005 Sort by Price - Ascending" src="https://github.com/user-attachments/assets/190f42a7-6aff-4677-9dfc-0acb14950b2d" />
 <img width="1256" height="683" alt="### TC-CAT-006 Image Lazy Loading (INTENTIONAL DEFECT) mobile" src="https://github.com/user-attachments/assets/f3b5e01f-fd5a-471c-ba67-bbfc7b203b69" />
 <img width="1357" height="716" alt="### TC-CAT-006 Image Lazy Loading (INTENTIONAL DEFECT)  desktop" src="https://github.com/user-attachments/assets/8c1dec24-6e44-4cae-9d6e-d71fdde0d1df" />
+<img width="1106" height="595" alt="TC-CART-002 Update Cart Quantity" src="https://github.com/user-attachments/assets/0848e07c-d725-4924-8188-c728ba5c61dd" />
+<img width="1201" height="537" alt="TC-CART-003 Stock Limit Enforcement" src="https://github.com/user-attachments/assets/01637c6f-c86a-4c64-9c31-dfa2eb1c56a8" />
