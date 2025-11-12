@@ -225,7 +225,8 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 **Evidence:** Screenshot of search results
 
----
+---<img width="1357" height="636" alt="TC-CAT-001 Exact Match" src="https://github.com/user-attachments/assets/643dbe0f-3b53-4e49-b473-fba4a3d6e1eb" />
+
 
 ### TC-CAT-002: Search Functionality - Partial Match
 **Priority:** High  
@@ -2355,6 +2356,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
