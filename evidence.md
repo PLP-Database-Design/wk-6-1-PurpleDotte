@@ -8,3 +8,4 @@
 <img width="1357" height="716" alt="### TC-CAT-006 Image Lazy Loading (INTENTIONAL DEFECT)  desktop" src="https://github.com/user-attachments/assets/8c1dec24-6e44-4cae-9d6e-d71fdde0d1df" />
 <img width="1106" height="595" alt="TC-CART-002 Update Cart Quantity" src="https://github.com/user-attachments/assets/0848e07c-d725-4924-8188-c728ba5c61dd" />
 <img width="1201" height="537" alt="TC-CART-003 Stock Limit Enforcement" src="https://github.com/user-attachments/assets/01637c6f-c86a-4c64-9c31-dfa2eb1c56a8" />
+<img width="1060" height="678" alt="TC-CART-004 Mini-Cart Stock Race Condition (INTENTIONAL DEFECT)2" src="https://github.com/user-attachments/assets/eb6e3119-0b81-40bb-b61e-248a52bf9587" />
