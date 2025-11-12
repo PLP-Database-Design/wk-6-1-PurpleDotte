@@ -355,7 +355,8 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 **Evidence:** Screenshot of Network tab showing all images loading at once
 
----
+---<img width="1256" height="683" alt="### TC-CAT-006 Image Lazy Loading (INTENTIONAL DEFECT) mobile" src="https://github.com/user-attachments/assets/f3b5e01f-fd5a-471c-ba67-bbfc7b203b69" />
+<img width="1357" height="716" alt="### TC-CAT-006 Image Lazy Loading (INTENTIONAL DEFECT)  desktop" src="https://github.com/user-attachments/assets/8c1dec24-6e44-4cae-9d6e-d71fdde0d1df" />
 
 ## 2. CART & CHECKOUT TEST CASES
 
@@ -2359,6 +2360,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
