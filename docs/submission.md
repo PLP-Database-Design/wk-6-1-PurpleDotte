@@ -192,8 +192,8 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 ## Summary
 
-**Total Test Cases:** 88  
-**Critical Priority:** 12  
+**Total Test Cases:** 77  
+**Critical Priority:** 11  
 **High Priority:** 45  
 **Medium Priority:** 31  
 **Intentional Defects:** 10/10 covered
@@ -2357,6 +2357,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
