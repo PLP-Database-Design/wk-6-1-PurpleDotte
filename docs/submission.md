@@ -408,7 +408,8 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 **Evidence:** Screenshot showing quantity changes and subtotal updates
 
----
+---<img width="1106" height="595" alt="TC-CART-002 Update Cart Quantity" src="https://github.com/user-attachments/assets/0848e07c-d725-4924-8188-c728ba5c61dd" />
+
 
 ### TC-CART-003: Stock Limit Enforcement
 **Priority:** High  
@@ -2361,6 +2362,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
