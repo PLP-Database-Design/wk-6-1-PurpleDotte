@@ -382,7 +382,8 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 **Evidence:** Screenshot of cart with added item
 
----
+---<img width="1335" height="604" alt="TC-CART-001 Add Item to Cart" src="https://github.com/user-attachments/assets/0b69702a-cec3-4741-91ac-03209b4b5955" />
+
 
 ### TC-CART-002: Update Cart Quantity
 **Priority:** High  
@@ -2360,6 +2361,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
