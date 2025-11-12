@@ -428,11 +428,15 @@ Full board configuration and issue creation and test cases will begin in week tw
 - Error message displays: "Cannot exceed available stock"
 - Quantity remains at maximum stock level
 
-**Post-conditions:** Stock limit enforced
+- **ACTUAL Result:**
+-  Quantity is infinite
+-  No error displays
+-  no limit to stock
+**Post-conditions:** no stock restrictions
 
 **Evidence:** Screenshot of stock limit error
 
----
+---<img width="1201" height="537" alt="TC-CART-003 Stock Limit Enforcement" src="https://github.com/user-attachments/assets/01637c6f-c86a-4c64-9c31-dfa2eb1c56a8" />
 
 ### TC-CART-004: Mini-Cart Stock Race Condition (INTENTIONAL DEFECT)
 **Priority:** Medium  
@@ -2362,6 +2366,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
