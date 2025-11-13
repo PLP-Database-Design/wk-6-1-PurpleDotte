@@ -13,3 +13,4 @@
 [Apply Expired Coupon.webm](https://github.com/user-attachments/assets/31b39f36-8b2f-4e62-b23c-75843dbdbaac)
 <img width="1184" height="554" alt="TC-PAY-001 Currency Validation - Supported Currency" src="https://github.com/user-attachments/assets/1f1d037c-5ce2-49d7-96b0-e4047efe0994" />
 <img width="1117" height="661" alt="TC-PAY-002 Currency Mismatch (INTENTIONAL DEFECT)  1png" src="https://github.com/user-attachments/assets/1b001d39-21a0-4555-aea3-f8413d7124bc" />
+<img width="465" height="311" alt="TC-PAY-003 Payment Success Flow" src="https://github.com/user-attachments/assets/d78dcadd-a705-44ed-9336-775b5f28cf75" />
