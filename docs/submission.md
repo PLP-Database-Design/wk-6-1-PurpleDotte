@@ -826,7 +826,10 @@ User prompted to "Retry with test details"
 
 **Evidence:** Screenshot of error message
 
----
+---<img width="1156" height="467" alt="TC-PAY-005 Payment Error Handling" src="https://github.com/user-attachments/assets/75123aa8-8577-471e-8f4f-1c50e0b1781e" />
+
+
+**status** passed
 
 ### TC-PAY-006: Minor Units Calculation
 **Priority:** High  
@@ -2469,6 +2472,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
