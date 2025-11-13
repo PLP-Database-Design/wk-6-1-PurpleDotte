@@ -616,11 +616,17 @@ Post-conditions: Test blocked - cannot proceed
 - Error message: "Minimum basket of $50.00 required"
 - No discount applied
 
-**Post-conditions:** Minimum basket enforced
+**Actual Result:**
+
+ Cannot attempt to apply coupon - no coupon field available
+
+ Basic coupon functionality not implemented in UI
+
+Post-conditions: Test blocked - cannot execute
 
 **Evidence:** Screenshot of minimum basket error
 
----
+---[Apply Expired Coupon.webm](https://github.com/user-attachments/assets/31b39f36-8b2f-4e62-b23c-75843dbdbaac)
 
 ### TC-CART-009: Non-Combinable Coupon Restriction
 **Priority:** Medium  
@@ -639,13 +645,24 @@ Post-conditions: Test blocked - cannot proceed
 - First coupon remains applied
 - Second coupon rejected
 
-**Post-conditions:** Combinability rules enforced
+**Actual Result:**
+
+Cannot apply first coupon - no coupon field available
+
+ Cannot test combinability rules - basic functionality missing
+
+ Coupon system not implemented in UI
+
+Post-conditions: Test blocked - cannot execute
+
+
+
 
 **Evidence:** Screenshot of non-combinable error
 
----
+---[Apply Expired Coupon.webm](https://github.com/user-attachments/assets/31b39f36-8b2f-4e62-b23c-75843dbdbaac)
 
-<a name="payment"></a>
+
 ## 3. PAYMENT INTEGRATION TEST CASES
 
 ### TC-PAY-001: Currency Validation - Supported Currency
@@ -2422,6 +2439,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
