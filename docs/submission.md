@@ -921,7 +921,9 @@ Real Paystack integration but no visible API communication
 
 **Evidence:** Screenshot of order detail with timeline
 
----
+---<img width="1109" height="658" alt="TC-ORD-001  View Order History" src="https://github.com/user-attachments/assets/4800274c-b1e7-4497-8b2a-673100a198ff" />
+
+ **status** passed
 
 ### TC-ORD-003: Order Status Transitions
 **Priority:** Critical  
@@ -2490,6 +2492,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
