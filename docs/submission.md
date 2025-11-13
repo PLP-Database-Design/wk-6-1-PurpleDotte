@@ -871,7 +871,7 @@ Real Paystack integration but no visible API communication
 ---<img width="1366" height="660" alt="TC-PAY-006 Minor Units Calculation" src="https://github.com/user-attachments/assets/ca5846a5-99a4-4024-b2d0-96bc04be3446" />
 
 **status failed no payment API calls visible  **
-<a name="orders"></a>
+
 ## 4. ORDERS & CSV EXPORT TEST CASES
 
 ### TC-ORD-001: View Order History
@@ -894,7 +894,7 @@ Real Paystack integration but no visible API communication
 
 **Evidence:** Screenshot of order history
 
----
+---<img width="1109" height="658" alt="TC-ORD-001  View Order History" src="https://github.com/user-attachments/assets/4800274c-b1e7-4497-8b2a-673100a198ff" />
 
 ### TC-ORD-002: View Order Details with Timeline
 **Priority:** High  
@@ -2488,6 +2488,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
