@@ -945,11 +945,31 @@ Real Paystack integration but no visible API communication
 - No invalid status transitions allowed
 - Timestamps in ISO8601 format
 
-**Post-conditions:** Status transitions validated
+**Actual Result:**
+
+ Admin role successfully set in localStorage (role: 'admin')
+
+ Role persists after refresh
+
+ No admin panel or admin features visible in application UI
+
+ No changes to navigation or user interface
+
+ Cannot access admin functionality
+
+Post-conditions: Admin role set but no admin UI available
+
+
+
+
+
 
 **Evidence:** Screenshot of each status transition
 
----
+---<img width="1109" height="658" alt="TC-ORD-001  View Order History" src="https://github.com/user-attachments/assets/4800274c-b1e7-4497-8b2a-673100a198ff" />
+<img width="1109" height="658" alt="TC-ORD-001  View Order History" src="https://github.com/user-attachments/assets/4800274c-b1e7-4497-8b2a-673100a198ff" />
+
+**status**  FAILED - Admin functionality not fully implemented
 
 ### TC-ORD-004: CSV Export - Format Validation
 **Priority:** High  
@@ -2492,6 +2512,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
