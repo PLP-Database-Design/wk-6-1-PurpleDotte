@@ -16,3 +16,4 @@
 <img width="465" height="311" alt="TC-PAY-003 Payment Success Flow" src="https://github.com/user-attachments/assets/d78dcadd-a705-44ed-9336-775b5f28cf75" />
 <img width="1141" height="460" alt="TC-PAY-004 Payment Cancellation Flow" src="https://github.com/user-attachments/assets/495f4ea5-65f1-4a11-98c4-e8f6ef780135" />
 <img width="1156" height="467" alt="TC-PAY-005 Payment Error Handling" src="https://github.com/user-attachments/assets/75123aa8-8577-471e-8f4f-1c50e0b1781e" />
+<img width="1366" height="660" alt="TC-PAY-006 Minor Units Calculation" src="https://github.com/user-attachments/assets/ca5846a5-99a4-4024-b2d0-96bc04be3446" />
