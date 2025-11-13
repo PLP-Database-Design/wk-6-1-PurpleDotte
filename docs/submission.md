@@ -753,11 +753,26 @@ Post-conditions: Test blocked - cannot execute
 - Confirmation page shows order number and success message
 - Cart clears after successful payment
 
-**Post-conditions:** Order created with Paid status
+**Actual Result:**
+
+ Payment declined with error message
+
+Error: "Transaction declined. Please use the test card"
+
+Payment did not process successfully
+
+User prompted to "Retry with test details"
+
+**Post-conditions:** Payment failed, order not created
+
+
+
+
+
 
 **Evidence:** Screenshot of confirmation page with order details
 
----
+---<img width="465" height="311" alt="TC-PAY-003 Payment Success Flow" src="https://github.com/user-attachments/assets/d78dcadd-a705-44ed-9336-775b5f28cf75" />
 
 ### TC-PAY-004: Payment Cancellation Flow
 **Priority:** High  
@@ -2451,6 +2466,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
