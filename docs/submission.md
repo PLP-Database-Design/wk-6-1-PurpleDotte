@@ -688,7 +688,7 @@ Post-conditions: Test blocked - cannot execute
 
 **Evidence:** Screenshot of Paystack modal with correct currency
 
----
+--<img width="1184" height="554" alt="TC-PAY-001 Currency Validation - Supported Currency" src="https://github.com/user-attachments/assets/1f1d037c-5ce2-49d7-96b0-e4047efe0994" />
 
 ### TC-PAY-002: Currency Mismatch (INTENTIONAL DEFECT)
 **Priority:** High  
@@ -2439,6 +2439,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
