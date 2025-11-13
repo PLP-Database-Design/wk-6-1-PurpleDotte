@@ -1073,11 +1073,25 @@ Post-conditions: Test cannot be executed - prerequisite functionality missing
 - Success message displayed
 - Return status updates in order
 
-**Post-conditions:** Return request submitted
+**Actual Result:**
+
+ No "Request Return" button found on order details page
+
+ Return functionality not implemented in order interface
+
+ Cannot test return window validation - feature missing
+
+Order details only show status tracking (Pending > Paid > Fulfilled > Delivered)
+
+Post-conditions: Test blocked - return feature not available
+
+
 
 **Evidence:** Screenshot of successful return request
 
----
+---<img width="1017" height="604" alt="TC-ORD-006  Return Window Validation" src="https://github.com/user-attachments/assets/7726325f-943b-464c-97d7-60e67dfb92aa" />
+
+**status**blocked - return feature not available
 
 ### TC-ORD-007: Return Window Off-by-One (INTENTIONAL DEFECT)
 **Priority:** Medium  
@@ -1096,15 +1110,27 @@ Post-conditions: Test cannot be executed - prerequisite functionality missing
 - Return should be rejected (outside 7-day window)
 - Error: "Return window has expired"
 
-**Actual Result (Expected Defect):**
-- Day 8 is accepted (off-by-one error)
-- Return request proceeds when it should be blocked
+Actual Result:
 
-**Post-conditions:** Defect documented
+ Cannot test return window logic
+
+ "Request Return" button not implemented (as confirmed in TC-ORD-006)
+
+ Return functionality completely missing from application
+
+ Cannot reproduce intentional defect - base feature doesn't exist
+
+Post-conditions: Test blocked - return system not implemented
+
+
 
 **Evidence:** Screenshot showing Day 8 return accepted
 
----
+---<img width="1017" height="604" alt="TC-ORD-006  Return Window Validation" src="https://github.com/user-attachments/assets/7726325f-943b-464c-97d7-60e67dfb92aa" />
+
+
+**status**blocked - return feature not available
+
 
 ### TC-ORD-008: Refund with Audit Trail
 **Priority:** High  
@@ -2539,6 +2565,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
