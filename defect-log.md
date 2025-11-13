@@ -322,7 +322,7 @@ Attachments: [Screenshots/Videos/Logs]
 
 ## Tips for Good Bug Reports
 
-✅ **DO:**
+ **DO:**
 - Write clear, specific titles
 - Include numbered reproduction steps
 - Attach screenshots/videos for visual issues
@@ -330,7 +330,7 @@ Attachments: [Screenshots/Videos/Logs]
 - Note if it's an intentional defect
 - Describe user impact
 
-❌ **DON'T:**
+ **DON'T:**
 - Write vague titles like "Bug in cart"
 - Skip steps to reproduce
 - Forget to attach evidence for Major/Critical bugs
