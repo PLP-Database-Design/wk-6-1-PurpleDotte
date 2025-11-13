@@ -21,3 +21,4 @@
 <img width="1109" height="658" alt="TC-ORD-001  View Order History" src="https://github.com/user-attachments/assets/4800274c-b1e7-4497-8b2a-673100a198ff" />
 <img width="1249" height="681" alt="TC-ORD-004 CSV Export - Format Validation" src="https://github.com/user-attachments/assets/a3159999-1368-427a-bd19-7d2ccfb888c4" />
 <img width="1249" height="681" alt="TC-ORD-004 CSV Export - Format Validation" src="https://github.com/user-attachments/assets/a3159999-1368-427a-bd19-7d2ccfb888c4" />
+<img width="1017" height="604" alt="TC-ORD-006  Return Window Validation" src="https://github.com/user-attachments/assets/7726325f-943b-464c-97d7-60e67dfb92aa" />
