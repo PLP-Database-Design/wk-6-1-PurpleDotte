@@ -1051,8 +1051,9 @@ Post-conditions: Test cannot be executed - prerequisite functionality missing
 
 
 **Evidence:** Screenshot of broken CSV columns
-<img width="1249" height="681" alt="TC-ORD-004 CSV Export - Format Validation" src="https://github.com/user-attachments/assets/a3159999-1368-427a-bd19-7d2ccfb888c4" />
----
+
+---<img width="1249" height="681" alt="TC-ORD-004 CSV Export - Format Validation" src="https://github.com/user-attachments/assets/a3159999-1368-427a-bd19-7d2ccfb888c4" />
+
 **status**blocked .BLOCKED" until the basic CSV export functionality from TC-ORD-004 is implemented first.
 
 ### TC-ORD-006: Return Window Validation
@@ -2538,6 +2539,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
