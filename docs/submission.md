@@ -499,6 +499,8 @@ Full board configuration and issue creation and test cases will begin in week tw
 
 ---<img width="1163" height="646" alt="TC-CART-005  Rounding Variance (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/3bb06a65-9e8e-400a-9091-30979ff53a98" />
 
+**status** passed
+
 
 ### TC-CART-006: Apply Valid Coupon
 **Priority:** High  
@@ -554,6 +556,7 @@ Evidence: All provided screenshots show no coupon input field or apply button
 
 ---[Apply Expired Coupon.webm](https://github.com/user-attachments/assets/31b39f36-8b2f-4e62-b23c-75843dbdbaac)
 
+**status** failed
 ### T-007TC-CAR: Apply Expired Coupon
 **Priority:** Medium  
 **FR Code:** FR-O01
@@ -599,6 +602,7 @@ Post-conditions: Test blocked - cannot proceed
 --
 ---[Apply Expired Coupon.webm](https://github.com/user-attachments/assets/31b39f36-8b2f-4e62-b23c-75843dbdbaac)
 
+**status** failed
 
 ### TC-CART-008: Minimum Basket Requirement
 **Priority:** Medium  
@@ -626,7 +630,9 @@ Post-conditions: Test blocked - cannot execute
 
 **Evidence:** Screenshot of minimum basket error
 
----[Apply Expired Coupon.webm](https://github.com/user-attachments/assets/31b39f36-8b2f-4e62-b23c-75843dbdbaac)
+---[Apply Expired Coupon.webm](https://github.com/user-attachments/assets/31b39f36-8b2f-4e62-b23c-75843dbdbaac) 
+
+**status** failed
 
 ### TC-CART-009: Non-Combinable Coupon Restriction
 **Priority:** Medium  
@@ -2441,6 +2447,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
