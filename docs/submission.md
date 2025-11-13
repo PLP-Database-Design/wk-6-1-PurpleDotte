@@ -571,11 +571,33 @@ Evidence: All provided screenshots show no coupon input field or apply button
 - No discount applied
 - Coupon field remains editable
 
-**Post-conditions:** Expired coupon rejected
+**Actual Result:**
+
+ Coupon entry field not implemented in UI
+
+ Cannot attempt to apply any coupon (valid or expired)
+
+ Basic coupon functionality missing
+
+Defect Details:
+
+Blocking Issue: Missing coupon input field and apply button
+
+Impact: All coupon-related test cases cannot be executed
+
+Related to: TC-CART-006 (same root cause)
+
+Post-conditions: Test blocked - cannot proceed
+
+
+
+
+
 
 **Evidence:** Screenshot of expired coupon error
 
 --
+---[Apply Expired Coupon.webm](https://github.com/user-attachments/assets/31b39f36-8b2f-4e62-b23c-75843dbdbaac)
 
 
 ### TC-CART-008: Minimum Basket Requirement
@@ -2400,6 +2422,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
