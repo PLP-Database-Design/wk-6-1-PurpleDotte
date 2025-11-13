@@ -798,7 +798,9 @@ User prompted to "Retry with test details"
 
 **Evidence:** Screenshot of cancellation message
 
----
+---<img width="1141" height="460" alt="TC-PAY-004 Payment Cancellation Flow" src="https://github.com/user-attachments/assets/495f4ea5-65f1-4a11-98c4-e8f6ef780135" />
+
+**status** passed
 
 ### TC-PAY-005: Payment Error Handling
 **Priority:** High  
@@ -2467,6 +2469,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
