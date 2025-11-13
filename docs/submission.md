@@ -994,11 +994,26 @@ Post-conditions: Admin role set but no admin UI available
 - No broken columns
 - All data displays correctly in spreadsheet
 
-**Post-conditions:** CSV exports correctly
+**Actual Result:**
+
+ Cannot find "Export CSV" button on orders page
+
+ No export functionality visible in order details view
+
+ CSV export feature not implemented in UI
+
+Order details page shows order information but no export options
+
+Post-conditions: Test blocked - export feature not available
+
+**Status:** failed. BLOCKED - CSV export functionality not implemented in user interface
+
+
 
 **Evidence:** Screenshot of CSV opened in Excel
 
----
+---<img width="1249" height="681" alt="TC-ORD-004 CSV Export - Format Validation" src="https://github.com/user-attachments/assets/a3159999-1368-427a-bd19-7d2ccfb888c4" />
+
 
 ### TC-ORD-005: CSV Decimal Format (INTENTIONAL DEFECT)
 **Priority:** Medium  
@@ -2512,6 +2527,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
