@@ -725,7 +725,11 @@ Post-conditions: Test blocked - cannot execute
 
 **Evidence:** Screenshot showing currency mismatch
 
----
+---<img width="1184" height="554" alt="TC-PAY-001 Currency Validation - Supported Currency" src="https://github.com/user-attachments/assets/1f1d037c-5ce2-49d7-96b0-e4047efe0994" />
+<img width="1117" height="661" alt="TC-PAY-002 Currency Mismatch (INTENTIONAL DEFECT)  1png" src="https://github.com/user-attachments/assets/1b001d39-21a0-4555-aea3-f8413d7124bc" />
+
+
+**status** passed
 
 ### TC-PAY-003: Payment Success Flow
 **Priority:** Critical  
@@ -2447,6 +2451,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
