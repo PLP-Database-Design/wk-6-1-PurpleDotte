@@ -849,12 +849,28 @@ User prompted to "Retry with test details"
 - No floating-point errors
 - Exact cent calculation maintained
 
-**Post-conditions:** Correct minor units sent
+**Actual Result:**
+
+ No Paystack API calls detected in Network tab
+
+ Cannot verify minor units calculation
+
+Only static image files (SVG) visible in network requests
+
+Payment processed successfully but via unknown mechanism
+
+Real Paystack integration but no visible API communication
+
+**Post-conditions:** Cannot verify - No payment API calls visible
+
+
+
 
 **Evidence:** Screenshot of network request payload
 
----
+---<img width="1366" height="660" alt="TC-PAY-006 Minor Units Calculation" src="https://github.com/user-attachments/assets/ca5846a5-99a4-4024-b2d0-96bc04be3446" />
 
+**status failed no payment API calls visible  **
 <a name="orders"></a>
 ## 4. ORDERS & CSV EXPORT TEST CASES
 
@@ -2472,6 +2488,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
