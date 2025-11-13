@@ -1173,7 +1173,7 @@ Post-conditions: Test blocked - All prerequisite features missing
 
 ---<img width="1090" height="668" alt="TC-ORD-008  Refund with Audit Trailpng" src="https://github.com/user-attachments/assets/7eca5ba6-8115-476e-8411-738413957a41" />
 
-**status**Status: ❌ BLOCKED
+**status**: ❌ BLOCKED
 This test cannot be executed until:
 
 Admin panel is built and accessible
@@ -2590,6 +2590,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
