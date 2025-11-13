@@ -769,8 +769,9 @@ User prompted to "Retry with test details"
 
 
 
-
 **Evidence:** Screenshot of confirmation page with order details
+
+**status** failed
 
 ---<img width="465" height="311" alt="TC-PAY-003 Payment Success Flow" src="https://github.com/user-attachments/assets/d78dcadd-a705-44ed-9336-775b5f28cf75" />
 
@@ -2466,6 +2467,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
