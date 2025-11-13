@@ -1151,14 +1151,39 @@ Post-conditions: Test blocked - return system not implemented
 - Audit entry created with: timestamp, action, admin user, note
 - Audit trail visible on order details
 - Refund amount recorded
+- 
+**Actual Result:**
 
-**Post-conditions:** Refund processed with audit
+ Cannot execute test - Multiple blocking issues:
+
+ Admin panel not found (as confirmed in TC-ADMIN-001)
+
+ Return system not implemented (as confirmed in TC-ORD-006/007)
+
+ No admin orders dashboard available
+
+ No refund processing functionality visible
+
+ No audit trail system accessible
+
+Post-conditions: Test blocked - All prerequisite features missing
+
 
 **Evidence:** Screenshot of audit trail
 
----
+---<img width="1090" height="668" alt="TC-ORD-008  Refund with Audit Trailpng" src="https://github.com/user-attachments/assets/7eca5ba6-8115-476e-8411-738413957a41" />
 
-<a name="admin"></a>
+**status**Status: ❌ BLOCKED
+This test cannot be executed until:
+
+Admin panel is built and accessible
+
+Customer return system is implemented
+
+Refund processing functionality exists
+
+Audit trail system is developed
+
 ## 5. ADMIN CONSOLE TEST CASES
 
 ### TC-ADM-001: Admin Access Guard
@@ -2565,6 +2590,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
