@@ -1240,12 +1240,27 @@ Post-conditions: Admin access control exists but is non-functional
 - Admin dashboard displays successfully
 - Admin features accessible: orders, inventory, moderation
 - No unauthorized errors
+- 
+**Actual Result:**
+
+Admin dashboard loads successfully when using correct role format: localStorage.setItem('app.user', JSON.stringify({ role: 'admin' }))
+
+Admin Console displays with menu options
+
+No unauthorized errors
+
+All menu items are visible (though labeled as "stub" indicating placeholder functionality)
+
+
+
 
 **Post-conditions:** Admin can access admin pages
 
 **Evidence:** Screenshot of admin dashboard
 
----
+---<img width="1071" height="622" alt="TC-ADM-002  Admin Access with Valid Role" src="https://github.com/user-attachments/assets/ad728ae8-05e4-4a4c-9acc-5af669cc233c" />
+
+**status** passed
 
 ### TC-ADM-003: Catalog CRUD - Create Book
 **Priority:** High  
@@ -2607,6 +2622,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
