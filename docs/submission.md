@@ -1670,12 +1670,24 @@ Post-conditions: Q&A system not available for security testing
 - Script tags stripped/sanitized
 - Plain text displayed: "<script>alert('XSS')</script>"
 - No script execution
+- 
+**Actual Result:**
 
-**Post-conditions:** Scripts sanitized
+ Cannot post reviews or Q&A (systems not implemented)
+
+ Test blocked at Step 1 - prerequisite cannot be met
+
+ Cannot test script sanitization - no content submission available
+
+Post-conditions: Review/Q&A systems not available for security testing
+
 
 **Evidence:** Screenshot of sanitized output
 
----
+---<img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
+
+
+**states** failed or blocked
 
 ### TC-REV-008: Safe URL Schemes Allowed
 **Priority:** High  
@@ -1694,11 +1706,24 @@ Post-conditions: Q&A system not available for security testing
 - Link opens in new tab
 - No security warning
 
-**Post-conditions:** Safe URLs allowed
+**Actual Result:**
+
+ Cannot post Q&A (system not implemented)
+
+ Test blocked at Step 1 - prerequisite cannot be met
+
+ Cannot test URL scheme safety - no content submission available
+
+Post-conditions: Q&A system not available for security testing
+
+
+
 
 **Evidence:** Screenshot of working HTTPS link
 
----
+---<img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
+
+**ststus** failed or blocke
 
 <a name="notifications"></a>
 ## 7. NOTIFICATIONS TEST CASES
@@ -2764,6 +2789,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
