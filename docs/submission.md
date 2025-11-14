@@ -1202,11 +1202,28 @@ Audit trail system is developed
 - Redirect to home or login
 - Error message: "Unauthorized. Admin access required."
 
-**Post-conditions:** Non-admin blocked from admin pages
+**Actual Result:**
+
+Shows "Unauthorized" message
+
+No redirect to login page
+
+JavaScript errors in console prevent proper functionality
+
+Admin system broken even when admin role is granted
+
+Post-conditions: Admin access control exists but is non-functional
+  
+
+
 
 **Evidence:** Screenshot of unauthorized message
 
----
+---<img width="1279" height="642" alt="TC-ADM-001 Admin Access Guard" src="https://github.com/user-attachments/assets/f680e3c5-9736-4632-bbed-eff5e5485209" />
+<img width="1343" height="626" alt="TC-ADM-001Admin Access Guard  2png" src="https://github.com/user-attachments/assets/b9a84d3f-5be3-4c28-b9ea-c1978ed895eb" />
+
+
+**Status:**  FAILED - Admin system implemented but broken by JavaScript errors and API issues
 
 ### TC-ADM-002: Admin Access with Valid Role
 **Priority:** Critical  
@@ -2590,6 +2607,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
