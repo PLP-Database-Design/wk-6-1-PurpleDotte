@@ -1636,11 +1636,23 @@ Post-conditions: Q&A system not available for testing
 - Clicking link executes JavaScript (XSS vulnerability)
 - Sanitization not enforced
 
-**Post-conditions:** Security defect documented
+**Actual Result:**
+
+ Cannot navigate to Q&A section (no book detail pages accessible)
+
+ Cannot post any Q&A content (Q&A system not implemented)
+
+ Test blocked at Step 1 - prerequisite cannot be met
+
+ Cannot test XSS vulnerability - no content submission system available
+
+Post-conditions: Q&A system not available for security testing
 
 **Evidence:** Screenshot/video of XSS execution
 
----
+---<img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
+
+**status** failed ,not found
 
 ### TC-REV-007: Script Tag Sanitization
 **Priority:** Critical  
@@ -2752,6 +2764,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
