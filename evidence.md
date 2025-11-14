@@ -51,6 +51,7 @@
 <img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
 <img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
 <img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
+<img width="1283" height="677" alt="TC-NOT-001 Notification Badge Update" src="https://github.com/user-attachments/assets/f2859c3f-7844-48d1-949b-7e7bce0cb41c" />
 
 
 
