@@ -47,6 +47,7 @@
 <img width="1071" height="622" alt="TC-ADM-002  Admin Access with Valid Role" src="https://github.com/user-attachments/assets/ad728ae8-05e4-4a4c-9acc-5af669cc233c" />
 <img width="1210" height="601" alt="TC-ADM-004  Inventory Adjustmen" src="https://github.com/user-attachments/assets/7ddb4d15-5264-47f2-b5ca-cf2de12a6d40" />
 <img width="1201" height="573" alt="TC-ADM-003 Catalog CRUD - Create Book" src="https://github.com/user-attachments/assets/39a22b0b-b8e8-48f6-96aa-ae74e00e6b8f" />
+<img width="1142" height="515" alt="TC-ADM-006  Moderation Queue" src="https://github.com/user-attachments/assets/9233d2b3-fdfe-4d01-8c46-547bfeb6dba7" />
 
 
 
