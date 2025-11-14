@@ -1514,11 +1514,23 @@ Post-conditions: Review system not available for testing
 - Option to edit existing review instead
 - No duplicate review created
 
-**Post-conditions:** Duplicate review prevented
+**Actual Result:**
+
+ Cannot navigate to book detail page (as confirmed in TC-REV-001)
+
+ Cannot submit any reviews - review system not implemented
+
+ Test blocked at Step 1 - prerequisite cannot be met
+
+ Cannot test review enforcement - no review system available
+
+**Post-conditions:** Review system not available for testin
 
 **Evidence:** Screenshot of duplicate review error
 
----
+---<img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
+
+**status** failed or blocked
 
 ### TC-REV-004: Flag Review for Moderation
 **Priority:** Medium  
@@ -2707,6 +2719,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
