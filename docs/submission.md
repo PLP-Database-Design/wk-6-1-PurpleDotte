@@ -1281,11 +1281,28 @@ All menu items are visible (though labeled as "stub" indicating placeholder func
 - New book appears in catalog
 - All metadata saved correctly
 
-**Post-conditions:** New book added to catalog
+
+**Actual Result:**
+
+ Clicking "Catalog CRUD (stub)" does nothing
+
+ No catalog management interface loads
+
+ Cannot complete any steps beyond navigation attempt
+
+Post-conditions: Catalog management not functional
+
+
+
+
+
 
 **Evidence:** Screenshot of newly created book
 
----
+---<img width="1201" height="573" alt="TC-ADM-003 Catalog CRUD - Create Book" src="https://github.com/user-attachments/assets/39a22b0b-b8e8-48f6-96aa-ae74e00e6b8f" />
+
+
+**status**❌ FAILED
 
 ### TC-ADM-004: Inventory Adjustment
 **Priority:** High  
@@ -2634,6 +2651,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
