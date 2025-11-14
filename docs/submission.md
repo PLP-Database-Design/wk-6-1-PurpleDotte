@@ -1590,11 +1590,27 @@ Post-conditions: Review system not available for testing
 - Question appears in Q&A list
 - No script tags execute
 
-**Post-conditions:** Q&A posted with safe formatting
+**Actual Result:**
+
+ Cannot navigate to book detail page (no individual book pages accessible)
+
+ No Q&A section found in catalog view
+
+ No question submission functionality available
+
+ Test blocked at Step 1 - prerequisite cannot be met
+
+ Cannot test markdown safety - no Q&A system implemented
+
+Post-conditions: Q&A system not available for testing
 
 **Evidence:** Screenshot of rendered markdown
 
----
+---<img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
+
+**status** failed or blocked
+
+
 
 ### TC-REV-006: XSS via JavaScript URL (INTENTIONAL DEFECT)
 **Priority:** Critical  
@@ -2736,6 +2752,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
