@@ -1306,11 +1306,23 @@ All menu items are visible (though labeled as "stub" indicating placeholder func
 - Low-stock warning triggers if stock < threshold
 - Adjustment logged with timestamp
 
-**Post-conditions:** Inventory updated
+**Actual Result:**
+
+ Cannot navigate to inventory management - "Inventory adjustments (stub)" button does nothing when clicked
+
+ No inventory interface loads
+
+ Cannot select books or update stock quantities
+
+ Admin inventory features are non-functional stubs
+
+Post-conditions: Inventory management not available
 
 **Evidence:** Screenshot of inventory adjustment
 
----
+---<img width="1210" height="601" alt="TC-ADM-004  Inventory Adjustmen" src="https://github.com/user-attachments/assets/7ddb4d15-5264-47f2-b5ca-cf2de12a6d40" />
+
+**Status:**  FAILED - Inventory management system not implemented
 
 ### TC-ADM-005: Low Stock Warning
 **Priority:** Medium  
@@ -2622,6 +2634,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
