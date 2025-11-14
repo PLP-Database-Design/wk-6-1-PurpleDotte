@@ -44,6 +44,9 @@
 <img width="1365" height="726" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/251653d5-8679-4836-b60a-dc228aeca10f" />
 <img width="1279" height="642" alt="TC-ADM-001 Admin Access Guard" src="https://github.com/user-attachments/assets/f680e3c5-9736-4632-bbed-eff5e5485209" />
 <img width="1343" height="626" alt="TC-ADM-001Admin Access Guard  2png" src="https://github.com/user-attachments/assets/b9a84d3f-5be3-4c28-b9ea-c1978ed895eb" />
+<img width="1071" height="622" alt="TC-ADM-002  Admin Access with Valid Role" src="https://github.com/user-attachments/assets/ad728ae8-05e4-4a4c-9acc-5af669cc233c" />
+<img width="1210" height="601" alt="TC-ADM-004  Inventory Adjustmen" src="https://github.com/user-attachments/assets/7ddb4d15-5264-47f2-b5ca-cf2de12a6d40" />
+<img width="1201" height="573" alt="TC-ADM-003 Catalog CRUD - Create Book" src="https://github.com/user-attachments/assets/39a22b0b-b8e8-48f6-96aa-ae74e00e6b8f" />
 
 
 
