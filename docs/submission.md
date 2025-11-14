@@ -1434,11 +1434,29 @@ Post-conditions: Moderation features not available
 - User can edit or delete own review
 - One review per user per book enforced
 
-**Post-conditions:** Review published
+**Actual Result:**
+
+Cannot access book detail page - only catalog listing view available
+
+ No "Write a Review" button visible in catalog view
+
+ No reviews section found on any page
+
+ Cannot complete any steps - book detail pages not accessible from catalog
+
+Review system appears completely missing from current interface
+
+Post-conditions: Review system not available
+
+
+
 
 **Evidence:** Screenshot of submitted review
 
----
+---<img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
+
+
+**status** failed
 
 ### TC-REV-002: Block Review Without Purchase
 **Priority:** High  
@@ -1457,11 +1475,27 @@ Post-conditions: Moderation features not available
 - Message: "You must purchase this book to write a review"
 - Submit button disabled
 
-**Post-conditions:** Non-purchaser blocked from reviewing
+
+**Actual Result:**
+
+Cannot navigate to book detail page (as confirmed in TC-REV-001)
+
+ Cannot attempt to write review - review system not accessible
+
+ Test blocked at Step 1 - prerequisite cannot be met
+
+Post-conditions: Review system not available for testing
+
+
+
+
 
 **Evidence:** Screenshot of blocked review attempt
 
----
+---<img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
+
+**status** failed or blocked
+
 
 ### TC-REV-003: One Review Per User Enforcement
 **Priority:** Medium  
@@ -2673,6 +2707,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
