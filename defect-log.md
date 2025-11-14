@@ -77,6 +77,397 @@
 **Date Found:** [Date]  
 **Assigned To:** [Developer - N/A for this project]
 
+### BUG-SEC-007: HTTPS Enforcement not enabled
+**Severity:** Critical
+**Priority:** High  
+**Status:** Open  
+**Component:** Security  
+**Affected FR(s):** FR-X04  
+**Labels:** security
+**Environment:**
+- Browser: Firefox 144.0.2
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-SEC-007
+
+**Steps to Reproduce:**
+1. Access BookStore site via HTTP (Firefox browser)
+2. Check for redirect to HTTPS
+3. Verify all resources load over HTTPS
+
+**Expected Result:**
+- HTTP requests redirect to HTTPS
+- All assets (images, scripts, styles) load via HTTPS
+- No mixed content warnings
+- Paystack script loads securely
+
+**Actual Result:**
+- HTTP requests does not redirect to HTTPS
+- All assets (images, scripts, styles) don’t load via HTTPS
+- Paystack script loads insecurely
+
+**Evidence:**
+- Screenshot: <img width="1302" height="713" alt="TC-SEC-007: HTTPS Enforcement" src="https://github.com/user-attachments/assets/1836f3c4-ee03-4fcc-b858-25c7dbe4ad99" />
+
+**Notes:**
+[Additional context, workarounds, impact assessment]
+
+**Found By:** Cindy  
+**Date Found:** 10 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+### BUG-PERF-001: Poor Performance Audit on Catalog Page: Largest Contentful Paint (LCP)
+**Severity:** Minor  
+**Priority:** High
+**Status:** Open  
+**Component:** Performance
+**Affected FR(s):** FR-X02  
+**Labels:** perf  
+**Environment:**
+- Browser: Chrome 142.0.7444.135
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-PERF-001
+
+**Steps to Reproduce:**
+1. Render BookStore web app (Chrome)
+2. Open Chrome DevTools
+3. Navigate to Lighthouse tab
+4. Select Desktop, Performance category
+5. Run audit on catalog page
+6. Check LCP metric
+
+**Expected Result:**
+- Score: Good (green)
+- LCP ≤ 2.5 seconds on desktop
+- Main content (hero image or first book cards) loads quickly
+
+**Actual Result:**
+Score: Needs improvement (orange)
+
+**Evidence:**
+(TC-PERF-001: Largest Contentful Paint (LCP) - Desktop)https://github.com/user-attachments/assets/f4bcb4ca-6bfc-472e-a7a1-386e85938e38
+
+**Found By:** Cindy  
+**Date Found:** 10 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+### BUG-PERF-002: Poor Performance Audit on Catalog Page: Largest Contentful Paint (LCP) - Mobile
+**Severity:** Minor  
+**Priority:** High
+**Status:** Open  
+**Component:** Performance  
+**Affected FR(s):** FR-X02  
+**Labels:** perf
+**Environment:**
+- Browser: Chrome 142.0.7444.135
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-PERF-002
+
+**Steps to Reproduce:**
+1. Render BookStore web app
+2. Open Chrome DevTools
+3. Set device to Mobile
+4. Enable throttling: Slow 4G
+5. Run Lighthouse audit
+6. Check LCP metric
+
+**Expected Result:**
+- LCP ≤ 3.0 seconds on mobile
+- Critical rendering path optimized
+- Score: Good (green) or Needs Improvement (yellow)
+
+**Actual Result:**
+LCP > 3.0 seconds on mobile
+
+**Evidence:**
+(TC-PERF-002: Largest Contentful Paint (LCP) - Mobile)https://github.com/user-attachments/assets/c08fe479-d0bd-4a31-b323-06c62cfd0f6c
+
+**Found By:** Cindy  
+**Date Found:** 10 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+### BUG-PERF-003: Poor Performance Audit on Catalog Page: Time to Interactive (TTI) replaced by Total Blocking Time (TBT) on Chrome
+**Severity:** Minor
+**Priority:** High
+**Status:** Open  
+**Component:** Performance
+**Affected FR(s):** FR-X02  
+**Labels:** perf
+**Environment:**
+- Browser: Chrome 142.0.7444.135
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-PERF-003
+
+**Steps to Reproduce:**
+1. Render BookStore web app
+2. Open Chrome DevTools
+3. Run Lighthouse audit on checkout page
+4. Test interactivity timing (replaced by Total Blocking Time (TBT) on Chrome)
+
+**Expected Result:**
+- TTI (TBT) ≤ 1 second on critical interactions
+- Page responds quickly to user input
+- No long tasks blocking main thread
+
+**Actual Result:** TTI (TBT) > 1 second on critical interactions
+
+**Evidence:**
+(TC-PERF-003: Time to Interactive (TTI))https://github.com/user-attachments/assets/83cd3c81-f6bb-4f67-be5e-a8f81073c5c9
+
+**Found By:** Cindy  
+**Date Found:** 10 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+
+### BUG-A11Y-005: Modal Focus (INTENTIONAL DEFECT) Lacks Accessibility (Keyboard Shortcuts Don't Work on Modal)
+**Severity:** Major  
+**Priority:** High  
+**Status:** Open  
+**Component:** A11y  
+**Affected FR(s):** FR-X01  
+**Labels:** a11y  
+**Environment:**
+- Browser: Chrome - 142.0.7444.135, Firefox Browser - 144.0.2, Microsoft Edge - 142.0.3595.69
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-A11Y-005
+
+**Steps to Reproduce:**
+1. Render BookStore web app
+2. Proceed to checkout
+3. Correctly fill in shipping form
+4. Click "Next" button
+5. Click "Proceed to Payment" button
+6. Click "Pay Now" button
+7. Right click on modal
+8. Click "Inspect Accessibility Properties" (Firefox)/"Inspect" (Chrome)/
+9. Check for aria-modal="true" attribute
+10. Click on modal
+11. Press Tab to navigate
+12. Close modal (press ESC on keyboard)
+13. Check if focus returns to trigger element ("Pay Now" button)
+
+**Expected Result:**
+- Modal has aria-modal="true"
+- ESC closes modal
+- Focus returns to element that opened modal
+
+**Actual Result:**
+- Modal doesn't have aria-modal attribute (Firefox and Chrome)
+- Keyboard keys (Tab and ESC) don't work on the modal (Firefox and Chrome)
+- Focus does not return to the element that opened the modal (Firefox and Chrome)
+- Page is stuck on loading (Microsoft Edge)
+
+**Evidence:**
+<img width="1357" height="722" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/9b89fee3-5793-49ec-b166-752e19b18268" />
+<img width="1312" height="723" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/b98dba48-c614-472f-bad0-6f48d6bc1088" />
+<img width="1362" height="717" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/12f7b874-f50b-4dfd-ab59-ec4b63955123" />
+<img width="1312" height="716" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/607bdb6d-5c64-45ca-b66b-a7a2be3c2211" />
+<img width="1365" height="716" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/4755f1d7-b952-4349-8c35-ae24d86c60ab" />
+<img width="1302" height="716" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/265a524f-58e5-4dfa-bec9-5a16f7e7f2f6" />
+<img width="1361" height="727" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/4cfd6268-b226-4ec6-b757-74e8877f57cc" />
+
+**Found By:** Cindy  
+**Date Found:** 12 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+### BUG-A11Y-007: Interactive Icons Fail Colour Contrast (WCAG AA) Standard Requirements
+**Severity:** Minor  
+**Priority:** High  
+**Status:** Open  
+**Component:** A11y  
+**Affected FR(s):** TC-A11Y-007  
+**Labels:** a11y  
+**Environment:**
+- Browser: Chrome 142.0.7444.135
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-A11Y-007
+
+**Steps to Reproduce:**
+1. Render BookStore web app
+2. Click on “WAVE” icon in your browser toolbar
+3. In the WAVE sidebar, select the “Contrast“ tab
+4. For any failures listed in the Contrast tab, expand the item and look at the details or click on the failure item on the catalog page.
+
+**Expected Result:**  
+- Text contrast ratio ≥ 4.5:1 for normal text
+- No WCAG AA contrast failures
+- Interactive elements meet contrast requirements
+
+**Actual Result:**
+- Text contrast ration < 4.5:1 for normal text (3.76:1)
+- WCAG AA contrast fails
+- Interactive elements don’t meet contrast requirements
+
+**Evidence:**
+<img width="1362" height="717" alt="TC-A11Y-007: Color Contrast - WCAG AA" src="https://github.com/user-attachments/assets/85d9dbf7-eb41-4df1-906e-7a0aead9cec1" />
+<img width="1361" height="726" alt="TC-A11Y-007: Color Contrast - WCAG AA" src="https://github.com/user-attachments/assets/ad6eed82-29d6-4b05-9492-cc12d72b2bbb" />
+<img width="1313" height="715" alt="TC-A11Y-007: Color Contrast - WCAG AA" src="https://github.com/user-attachments/assets/835cc7c3-723f-41e6-87c4-18087d2b77dc" />
+
+**Found By:** Cindy  
+**Date Found:** 12 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+### BUG-COMPAT-001: Chrome - Responsive Design on Mobile (Visual Elements Overlap)
+**Severity:** Major  
+**Priority:** High  
+**Status:** Open  
+**Component:** Compatibility  
+**Affected FR(s):** FR-X03  
+**Labels:** compatibility  
+**Environment:**
+- Browser: Chrome 142.0.7444.135
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-COMPAT-001
+
+**Steps to Reproduce:**
+1. Render BookStore web app
+2. Open DevTools (press “f12“ on keyboard)
+3. Click on “Toggle device toolbar“ (small image of a phone infront of a larger screen)
+4. Click on the number (width) next to “Dimensions: responsive” on the top left of your screen
+5. Input the “375” for mobile view then press Enter (on your keyboard)
+6. Test core flows: browse → cart → checkout → payment
+7. Verify all features work
+
+**Expected Result:**
+- All features are functional
+- No console errors
+- Responsive design works at all breakpoints
+- Paystack integration work
+- Visual elements render correctly  
+
+**Actual Result:**
+Visual elements do not render correctly, they appear to overlap specifically on the cart page and the search box palceholder text is not completely visible. The "remove" text looks out of place (it is not inside its container).  
+
+**Evidence:**
+<img width="1365" height="708" alt="TC-COMPAT-001: Chrome Latest Version" src="https://github.com/user-attachments/assets/0228610b-b874-4050-a9b0-f5c6aaf13f6e" />
+
+**Found By:** Cindy  
+**Date Found:** 13 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]
+
+### BUG-COMPAT-002: Firefox - Responsive Design on Mobile (Visual Elements Overlap)
+**Severity:** Major  
+**Priority:** High  
+**Status:** Open  
+**Component:** Compatibility  
+**Affected FR(s):** FR-X03  
+**Labels:** compatibility  
+**Environment:**
+- Browser: Firefox 144.0.2
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-COMPAT-002
+
+**Steps to Reproduce:**
+1. Render BookStore web app
+2. Open DevTools (press “f12“ on keyboard)
+3. Click on “Toggle device toolbar“ (small image of a phone infront of a larger screen)
+4. Click on the number (width) next to “Responsive” tab on the top left of your screen
+5. Input the “375” for mobile view then press Enter (on your keyboard)
+6. Test core flows: browse → cart → checkout → payment
+7. Verify all features work  
+
+**Expected Result:**
+- All features work
+- No Firefox-specific issues
+- Visual elements render correctly
+- localStorage functions properly  
+
+**Actual Result:**
+Visual elements do not render correctly, they appear to overlap specifically on the cart page and the search box palceholder text is not completely visible. The "remove" text looks out of place (it is not inside its container)
+
+**Evidence:**
+<img width="1313" height="716" alt="TC-COMPAT-002: Firefox Latest Version" src="https://github.com/user-attachments/assets/34a01f6b-ff1a-4b8f-996d-c98d5775cfbe" />
+
+**Found By:** Cindy  
+**Date Found:** 13 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+### BUG-COMPAT-004: MS Edge - Responsive Design on Mobile/Tablet/Desktop (Visual Elements Overlap-Mobile, Payment Stuck on Processing and Compatibility Errors Thrown on DevTools)
+**Severity:** Critical  
+**Priority:** High  
+**Status:** Open  
+**Component:** Compatibility
+**Affected FR(s):** FR-X03  
+**Labels:** compatibility  
+**Environment:**
+- Browser: Edge 142.0.3595.69
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-COMPAT-004
+
+**Steps to Reproduce:**
+1. Render BookStore web app (Microsoft Edge)
+2. Open DevTools (press “f12“ on keyboard)
+3. Click on “Toggle device toolbar“ (small image of a phone infront of a larger screen)
+4. Click on the number (width) next to “Dimensions Resolution” tab on the top left of your screen
+5. Input the “375” for mobile view then press Enter (on your keyboard)
+6. Test core flows: browse → cart → checkout → payment
+7. Verify all features work
+8. Repeat step 4
+9. Input the “768” for tablet view then press Enter (on your keyboard)
+10. Repeat step 6 and 7
+11. Repeat step 4
+12. Input the “1024” for desktop view then press Enter (on your keyboard)
+13. Repeat step 6 and 7
+
+**Expected Result:**
+- All features work
+- No Firefox-specific issues
+- Visual elements render correctly
+- Application works in Edge
+- No Edge-specific issues
+- Compatible with Chromium-based Edge
+
+**Actual Result:**
+- On mobile view, visual elements do not render correctly, they appear to overlap specifically on the cart page and the search box palceholder text is not completely visible. 
+- The "remove" text looks out of place (it is not inside its container).
+- Payment stuck on processing (mobile, tablet and desktop view).
+DevTools compatibility issues (“-webkit-text-size-adjust“, “iframe[allowpaymentrequest], “meta[name=theme-color]“) - mobile, tablet and desktop view.
+
+**Evidence:**
+<img width="1358" height="712" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/8aa7f331-7c9a-46b7-8bb1-e4c10e6d5397" />
+<img width="1357" height="711" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/f7c47941-b29a-4bde-8dde-31f75421d4f8" />
+<img width="1363" height="722" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/76fee4f3-8618-4cae-a619-9f651a665e37" />
+<img width="1365" height="726" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/251653d5-8679-4836-b60a-dc228aeca10f" />
+
+**Found By:** Cindy  
+**Date Found:** 13 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
 ---
 
 ## Example: Completed Defect Entry
