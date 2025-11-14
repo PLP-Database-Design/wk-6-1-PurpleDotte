@@ -1550,11 +1550,28 @@ Post-conditions: Review system not available for testing
 - Review added to admin moderation queue
 - Confirmation message displayed
 
-**Post-conditions:** Review flagged for moderation
+
+**Actual Result:**
+
+ Cannot navigate to book with reviews (no book detail pages accessible)
+
+ No reviews exist in the system (review system not implemented)
+
+ No flag/report functionality available
+
+ Test blocked at Step 1 - prerequisite cannot be met
+
+ Cannot test moderation flagging - no review content to moderate
+
+
+
 
 **Evidence:** Screenshot of flag confirmation
 
----
+------<img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
+
+
+**status** failed or blocked 
 
 ### TC-REV-005: Q&A with Safe Markdown
 **Priority:** High  
@@ -2719,6 +2736,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
