@@ -1358,11 +1358,19 @@ Post-conditions: Inventory management not available
 - Book highlighted in inventory list
 - Notification badge updates
 
-**Post-conditions:** Low-stock alert visible
+**Actual Result:**
+
+Cannot set book stock - inventory management system not functional
+
+ Test blocked at Step 1 - prerequisite cannot be met
+
+ Cannot verify low-stock warning system
 
 **Evidence:** Screenshot of low-stock warning
 
----
+---<img width="1210" height="601" alt="TC-ADM-004  Inventory Adjustmen" src="https://github.com/user-attachments/assets/7ddb4d15-5264-47f2-b5ca-cf2de12a6d40" />
+
+**status** failed or blocked
 
 ### TC-ADM-006: Moderation Queue
 **Priority:** Medium  
@@ -1383,11 +1391,25 @@ Post-conditions: Inventory management not available
 - Action logs with admin user and timestamp
 - Content updates accordingly
 
-**Post-conditions:** Flagged content moderated
+**Actual Result:**
+
+ Clicking "Moderation queue (stub)" does nothing
+
+ No moderation interface loads
+
+ Cannot view or manage flagged content
+
+ Moderation system not implemented
+
+Post-conditions: Moderation features not available
 
 **Evidence:** Screenshot of moderation queue
 
----
+---<img width="1142" height="515" alt="TC-ADM-006  Moderation Queue" src="https://github.com/user-attachments/assets/9233d2b3-fdfe-4d01-8c46-547bfeb6dba7" />
+
+
+**status** failed or blocked
+
 
 <a name="reviews"></a>
 ## 6. REVIEWS & COMMUNITY TEST CASES
@@ -2651,6 +2673,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
