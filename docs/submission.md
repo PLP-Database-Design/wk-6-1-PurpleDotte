@@ -1779,11 +1779,26 @@ Post-conditions: Notification system not available
 - Each shows: message, timestamp, read/unread status
 - Unread notifications highlighted
 
-**Post-conditions:** Notification history accessible
+**Actual Result:**
+
+ No notification icon exists to click
+
+ No notification system available in application
+
+Cannot create multiple notifications - system doesn't exist
+
+ Test blocked at Step 1 - prerequisite cannot be met
+
+ Cannot test notification history - no notification functionality
+
+Post-conditions: Notification system not available
 
 **Evidence:** Screenshot of notification list
 
----
+---<img width="1283" height="677" alt="TC-NOT-001 Notification Badge Update" src="https://github.com/user-attachments/assets/f2859c3f-7844-48d1-949b-7e7bce0cb41c" />
+
+
+**status** failed or blocked
 
 ### TC-NOT-003: Mark All Read (INTENTIONAL DEFECT)
 **Priority:** Medium  
@@ -2801,6 +2816,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
