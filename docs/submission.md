@@ -1455,6 +1455,7 @@ Post-conditions: Review system not available
 
 ---<img width="1179" height="676" alt="TC-REV-001 Submit Review as Purchaser" src="https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b" />
 
+**status** failed or blocked
 
 **status** failed
 
@@ -1744,11 +1745,22 @@ Post-conditions: Q&A system not available for security testing
 - Badge updates in real-time
 - Badge persists across page refresh
 
-**Post-conditions:** Badge shows correct count
+**Actual Result:**
+
+ No notification system found in application interface
+
+ No notification badges or icons visible
+
+ Cannot trigger notification events
+
+ Test blocked at Step 2
+
+Post-conditions: Notification system not available
 
 **Evidence:** Screenshot of notification badge
 
----
+---<img width="1283" height="677" alt="TC-NOT-001 Notification Badge Update" src="https://github.com/user-attachments/assets/f2859c3f-7844-48d1-949b-7e7bce0cb41c" />
+
 
 ### TC-NOT-002: View Notification History
 **Priority:** Medium  
@@ -2789,6 +2801,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
