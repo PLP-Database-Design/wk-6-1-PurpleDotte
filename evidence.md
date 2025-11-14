@@ -43,6 +43,7 @@
 <img width="1363" height="722" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/76fee4f3-8618-4cae-a619-9f651a665e37" />
 <img width="1365" height="726" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/251653d5-8679-4836-b60a-dc228aeca10f" />
 <img width="1279" height="642" alt="TC-ADM-001 Admin Access Guard" src="https://github.com/user-attachments/assets/f680e3c5-9736-4632-bbed-eff5e5485209" />
+<img width="1343" height="626" alt="TC-ADM-001Admin Access Guard  2png" src="https://github.com/user-attachments/assets/b9a84d3f-5be3-4c28-b9ea-c1978ed895eb" />
 
 
 
