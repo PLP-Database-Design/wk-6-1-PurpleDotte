@@ -1822,11 +1822,25 @@ Post-conditions: Notification system not available
 - Badge count does NOT update to 0
 - Badge still shows old count
 
-**Post-conditions:** Badge defect documented
+**Actual Result:**
+
+ Cannot open notifications panel - no notification system exists
+
+ No notifications exist to mark as read
+
+ No badge count to observe - notification badges not implemented
+
+Test blocked at Step 1 - prerequisite cannot be met
+
+ Cannot verify intentional defect - feature doesn't exist
+
+Post-conditions: Notification system not available for testing
 
 **Evidence:** Screenshot showing badge not updating
 
----
+---<img width="1283" height="677" alt="TC-NOT-001 Notification Badge Update" src="https://github.com/user-attachments/assets/f2859c3f-7844-48d1-949b-7e7bce0cb41c" />
+
+**status**failed or blocked
 
 ### TC-NOT-004: Order Status Notification
 **Priority:** Medium  
@@ -1844,11 +1858,26 @@ Post-conditions: Notification system not available
 - Message: "Your order #123 has been updated to Fulfilled"
 - Badge increments
 
-**Post-conditions:** Status change notification sent
+**Actual Result:**
+
+Cannot change order status as admin - admin panel features are non-functional stubs (BUG-005)
+
+ No notification system exists to receive status updates
+
+ No badges to increment - notification badges not implemented
+
+Test blocked at Step 1 - prerequisite cannot be met
+
+Post-conditions: Notification and admin systems not available
+
+
 
 **Evidence:** Screenshot of status notification
+<img width="1283" height="677" alt="TC-NOT-001 Notification Badge Update" src="https://github.com/user-attachments/assets/f2859c3f-7844-48d1-949b-7e7bce0cb41c" />
 
----
+
+**status** failed or blocked
+
 
 <a name="accessibility"></a>
 ## 8. ACCESSIBILITY TEST CASES
@@ -2816,6 +2845,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
