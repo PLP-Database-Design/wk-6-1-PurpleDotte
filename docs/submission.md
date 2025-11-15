@@ -221,13 +221,24 @@ Full board configuration and issue creation and test cases will begin in week tw
 - Book card displays with correct title, author, price, and image
 - Search is case-insensitive
 
-**Post-conditions:** Search results display matching book
+**Actual Result:**
+
+ Search returns exact book match - "The Great Gatsb" finds the correct book
+
+ Book card displays correctly with title, author, price, and image
+
+ Search functionality works - filters catalog in real-time
+
+ Case-insensitive confirmed - works with various capitalizations
+
+Post-conditions: Search results display matching book correctly
 
 **Evidence:** Screenshot of search results
 
 ---<img width="1357" height="636" alt="TC-CAT-001 Exact Match" src="https://github.com/user-attachments/assets/643dbe0f-3b53-4e49-b473-fba4a3d6e1eb" />
 
-
+ **status** passed
+ 
 ### TC-CAT-002: Search Functionality - Partial Match
 **Priority:** High  
 **FR Code:** FR-O01
@@ -244,12 +255,29 @@ Full board configuration and issue creation and test cases will begin in week tw
 - All books containing "Great" in title, author, or description are returned
 - Results are displayed in a grid layout
 - No results message displays if no matches found
+- 
+  **Actual Result:**
 
-**Post-conditions:** Relevant search results displayed
+ Partial match works - "19" finds "1984" book
 
-**Evidence:** Screenshot of partial match results
+ Results displayed in grid layout - proper book card format
+
+ Search filters in real-time - no Enter needed, instant results
+
+ Multiple fields searched - finds matches in title (1984)
+
+ Visual feedback - catalog updates immediately during typing
+
+Post-conditions: Relevant search results displayed correctly
+
+
+
+
+**Evidence:** Screenshot of partial match reslts
 
 ---<img width="1364" height="637" alt="TC-CAT-002 Search Functionality  Partial Match" src="https://github.com/user-attachments/assets/3f338b37-62b0-4443-ba59-b6edeabd69ea" />
+
+**status** passed
 
 
 ### TC-CAT-003: Search with Diacritics (INTENTIONAL DEFECT)
@@ -272,11 +300,23 @@ Full board configuration and issue creation and test cases will begin in week tw
 - Search does not normalize diacritics
 - Searching "Cafe" does not return "Café"
 
-**Post-conditions:** Defect documented
+**Actual Result:**
+
+ Cannot test diacritics normalization - no books with diacritical marks exist in catalog
+
+ All book titles use basic Latin characters - no "Café", " naïve", "façade" etc.
+
+ Test blocked at Step 2 - prerequisite cannot be met
+
+ Cannot verify intentional defect - no diacritic content available
+
+Post-conditions: Diacritic testing not possible with current catalog content
 
 **Evidence:** Screenshot showing failed diacritic search
 
----
+---<img width="775" height="673" alt="TC-CAT-003 Search with Diacritics (INTENTIONAL DEFECT" src="https://github.com/user-attachments/assets/dc0e2d05-2aef-463e-851c-ff1e66b899b1" />
+
+***status cannot verify**
 
 ### TC-CAT-004: Filter by Genre with AND Logic
 **Priority:** High  
@@ -3029,6 +3069,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
