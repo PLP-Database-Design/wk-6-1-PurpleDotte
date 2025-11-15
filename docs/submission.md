@@ -2060,7 +2060,15 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 **Post-conditions:** Modal accessibility defect documented
 
 **Evidence:** Screenshot of modal HTML showing missing aria-modal
+<img width="1357" height="722" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/9b89fee3-5793-49ec-b166-752e19b18268" />
+<img width="1312" height="723" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/b98dba48-c614-472f-bad0-6f48d6bc1088" />
+<img width="1362" height="717" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/12f7b874-f50b-4dfd-ab59-ec4b63955123" />
+<img width="1312" height="716" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/607bdb6d-5c64-45ca-b66b-a7a2be3c2211" />
+<img width="1365" height="716" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/4755f1d7-b952-4349-8c35-ae24d86c60ab" />
+<img width="1302" height="716" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/265a524f-58e5-4dfa-bec9-5a16f7e7f2f6" />
+<img width="1361" height="727" alt="TC-A11Y-005: Modal Focus Management (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/4cfd6268-b226-4ec6-b757-74e8877f57cc" />
 
+**Status:** Fail
 ---
 
 ### TC-A11Y-006: Image Alt Text
@@ -2084,7 +2092,10 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 
 **Post-conditions:** Images have descriptive alt text
 
-**Evidence:** Screenshot of HTML showing alt attributes
+**Evidence:** Screenshot of HTML showing alt attributes  
+<img width="1302" height="595" alt="TC-A11Y-006_Image Alt Text" src="https://github.com/user-attachments/assets/30ac833f-171d-4711-b8fa-523d6e5bb1f0" />  
+
+**Status:** Pass  
 
 ---
 
@@ -2108,9 +2119,17 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - No WCAG AA contrast failures
 - Interactive elements meet contrast requirements
 
-**Post-conditions:** Color contrast meets WCAG 2.1 AA
+**Actual Result:**
+- Text contrast ration < 4.5:1 for normal text (3.76:1)
+- WCAG AA contrast fails
+- Interactive elements don’t meet contrast requirements
 
 **Evidence:** Screenshot of axe DevTools report
+<img width="1362" height="717" alt="TC-A11Y-007: Color Contrast - WCAG AA" src="https://github.com/user-attachments/assets/85d9dbf7-eb41-4df1-906e-7a0aead9cec1" />
+<img width="1361" height="726" alt="TC-A11Y-007: Color Contrast - WCAG AA" src="https://github.com/user-attachments/assets/ad6eed82-29d6-4b05-9492-cc12d72b2bbb" />
+<img width="1313" height="715" alt="TC-A11Y-007: Color Contrast - WCAG AA" src="https://github.com/user-attachments/assets/835cc7c3-723f-41e6-87c4-18087d2b77dc" />
+
+**Status:** Fail  
 
 ---
 
@@ -2136,6 +2155,10 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 **Post-conditions:** Motion preferences respected
 
 **Evidence:** Video showing reduced motion behavior
+
+https://github.com/user-attachments/assets/0d802f6d-e800-4a6d-93af-f204474fe601
+
+**Status:** Pass  
 
 ---
 
@@ -2164,6 +2187,10 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 
 **Evidence:** Screen reader transcript of announcements
 
+<img width="1340" height="573" alt="Image" src="https://github.com/user-attachments/assets/4379630e-d511-47b9-9426-05b4b71ddb18" />
+
+**Status:** Pass  
+
 ---
 
 <a name="performance"></a>
@@ -2185,14 +2212,18 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 4. Run audit on catalog page
 5. Check LCP metric
 
-**Expected Result:**
+**Expected Result:**  
 - LCP ≤ 2.5 seconds on desktop
 - Main content (hero image or first book cards) loads quickly
 - Score: Good (green)
 
-**Post-conditions:** LCP meets desktop budget
+**Actual Result:**  
+Score: Needs improvement (orange)
 
 **Evidence:** Screenshot of Lighthouse report showing LCP
+(TC-PERF-001: Largest Contentful Paint (LCP) - Desktop)https://github.com/user-attachments/assets/f4bcb4ca-6bfc-472e-a7a1-386e85938e38
+
+**Status:** Fail  
 
 ---
 
@@ -2212,14 +2243,18 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 4. Run Lighthouse audit
 5. Check LCP metric
 
-**Expected Result:**
+**Expected Result:**  
 - LCP ≤ 3.0 seconds on mobile
 - Critical rendering path optimized
 - Score: Good (green) or Needs Improvement (yellow)
 
-**Post-conditions:** LCP acceptable for mobile
+**Actual Result:**  
+LCP > 3.0 seconds on mobile
 
 **Evidence:** Screenshot of Lighthouse mobile report
+(TC-PERF-002: Largest Contentful Paint (LCP) - Mobile)https://github.com/user-attachments/assets/c08fe479-d0bd-4a31-b323-06c62cfd0f6c
+
+**Status:** Fail  
 
 ---
 
@@ -2241,9 +2276,12 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - Page responds quickly to user input
 - No long tasks blocking main thread
 
-**Post-conditions:** TTI meets budget
+**Actual Result:** TTI (TBT) > 1 second on critical interactions  
 
 **Evidence:** Screenshot of TTI metric from Lighthouse
+(TC-PERF-003: Time to Interactive (TTI))https://github.com/user-attachments/assets/83cd3c81-f6bb-4f67-be5e-a8f81073c5c9
+
+**Status:** Fail  
 
 ---
 
@@ -2271,6 +2309,10 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 
 **Evidence:** Screenshot showing CLS score
 
+<img width="1343" height="702" alt="TC-PERF-004_Cumulative Layout Shift (CLS)" src="https://github.com/user-attachments/assets/9dda4ae7-0ddf-4f1e-9e7d-56f7f145a8b4" />
+
+**Status:** Pass  
+
 ---
 
 ### TC-PERF-005: Image Optimization
@@ -2296,6 +2338,9 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 **Post-conditions:** Images optimized for performance
 
 **Evidence:** Screenshot of Network tab showing image requests
+<img width="1307" height="712" alt="TC-PERF-005_Image Optimization" src="https://github.com/user-attachments/assets/4b897770-c10d-49e1-8e05-244266703a68" />
+
+**Status:** Pass  
 
 ---
 
@@ -2318,9 +2363,12 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - Core Web Vitals pass
 - Actionable recommendations documented
 
-**Post-conditions:** Performance benchmarked
+**Actual Result:** https://pagespeed.web.dev/ returned "Unable to resolve http://localhost:3000/"
 
 **Evidence:** Screenshot of PageSpeed Insights results
+<img width="1350" height="695" alt="TC-PERF-006_PageSpeed Insights Score" src="https://github.com/user-attachments/assets/697f96f3-92dc-482e-be03-422b84018486" />
+
+**Status:** Fail  
 
 ---
 
@@ -2347,9 +2395,21 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - No JavaScript execution
 - HTML entities escaped
 
-**Post-conditions:** Script injection blocked
+**Actual Result:**  
+- Cannot execute test - Review page does not allow user to enter/type a review. Review page only allows user to view item oder details and proceed to payment.
+- No Q&A page
 
-**Evidence:** Screenshot showing escaped script tags
+**Post-conditions:** Test blocked - User unable to enter/type a review
+
+**Evidence:** Screenshot showing review page without the necessary fields to allow user to enter/type a review. No Q&A page
+<img width="1308" height="677" alt="TC-SEC-001_UGC Script Injection Prevention" src="https://github.com/user-attachments/assets/353647bf-b3df-4a82-8882-a364a6165acc" />
+
+**status**: ❌ BLOCKED
+This test cannot be executed until:
+
+Review page is built with fields to allow user to enter/type a review
+
+Q&A page is built and accessible
 
 ---
 
@@ -2375,6 +2435,9 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 **Post-conditions:** SQL injection prevented
 
 **Evidence:** Screenshot showing safe search handling
+<img width="1362" height="663" alt="TC-SEC-002_SQL Injection in Search" src="https://github.com/user-attachments/assets/3bf45dfa-ddca-47b5-baec-4b333c5a2d78" />
+
+**Status:** Pass  
 
 ---
 
@@ -2396,9 +2459,17 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - Error message: "Please enter a valid image URL"
 - Only http/https URLs accepted
 
-**Post-conditions:** Malicious URLs blocked
+**Actual Result:**
+Cannot execute test:
+- Admin panel not found (as confirmed in TC-ADMIN-001)
+- No admin catalog management available
+
+**Post-conditions:** Test blocked - Prerequisite feature missing
 
 **Evidence:** Screenshot of validation error
+<img width="1311" height="712" alt="TC-SEC-003_XSS via Image URL" src="https://github.com/user-attachments/assets/3c3b2224-5d66-479b-b2c8-0c8d614e06d6" />
+
+**Status:** Blocked - No admin catalog management available
 
 ---
 
@@ -2424,9 +2495,16 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - All other schemes blocked or stripped
 - Clear error message for invalid schemes
 
-**Post-conditions:** URL scheme whitelist enforced
+**Actual Result:**  
+- Review page: user cannot enter/write a review, user is only able to view item details and "Proceed to Payment" button
+- No Q&A page
 
-**Evidence:** Screenshots of each test case
+**Post-conditions:** Test blocked - User unable to enter/type a review. There is no Q&A page
+
+**Evidence:** User unable to enter/type a review. There is no Q&A page
+<img width="1307" height="701" alt="TC-SEC-004_URL Scheme Whitelist Validation" src="https://github.com/user-attachments/assets/86250d72-976d-4abd-8d00-a039394cfcab" />
+
+**Status:** Blocked - User unable to enter/type a review. There is no Q&A page
 
 ---
 
@@ -2449,9 +2527,15 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - User informed and can continue
 - Alternative action suggested (clear cart, checkout)
 
-**Post-conditions:** Quota errors handled gracefully
+**Actual Result:**  
+User is not alerted if the storage limit (1e+308/infinity) is reached
+
+**Post-conditions:** Quota errors not handled gracefully
 
 **Evidence:** Screenshot of quota error message
+<img width="1305" height="627" alt="TC-SEC-005_localStorage Quota Handling" src="https://github.com/user-attachments/assets/42e80bca-94df-4594-8120-f83dc0ac3340" />
+
+**Status:** Fail
 
 ---
 
@@ -2473,9 +2557,20 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - Error logged but doesn't crash app
 - User can continue using app
 
-**Post-conditions:** Parse errors handled
+**Actua Result:**
+- The error is not logged
+- User is able to contine using the app
+- Application handles parse error gracefully
+- Falls back to empty/default state
 
-**Evidence:** Screenshot/console log of error handling
+**Post-conditions:**  
+- No error is logged 
+- App continues to work as expected
+
+**Evidence:** No error is logged
+<img width="1305" height="706" alt="TC-SEC-006_SON Parse Error Handling" src="https://github.com/user-attachments/assets/d1b2994c-9f95-41ef-bfe0-d55e8f42a7d0" />
+
+**Status:** Fail
 
 ---
 
@@ -2498,9 +2593,17 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - No mixed content warnings
 - Paystack script loads securely
 
-**Post-conditions:** HTTPS enforced
+**Actual Result:**
+- HTTP requests does not redirect to HTTPS
+- All assets (images, scripts, styles) don’t load via HTTPS
+- Paystack script loads insecurely
+
+**Post-conditions:** HTTPS is not enforced
 
 **Evidence:** Screenshot of secure connection indicator
+- Screenshot: <img width="1302" height="713" alt="TC-SEC-007: HTTPS Enforcement" src="https://github.com/user-attachments/assets/1836f3c4-ee03-4fcc-b858-25c7dbe4ad99" />
+
+**Status:** Fail
 
 ---
 
@@ -2527,9 +2630,16 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - Paystack integration works
 - Visual elements render correctly
 
-**Post-conditions:** Chrome compatibility verified
+**Actual Result:**
+- Visual elements do not render correctly, they appear to overlap specifically on the cart page and the search box palceholder text is not completely visible. 
+- The "remove" text looks out of place (it is not inside its container).
+
+**Post-conditions:** Chrome compatibility failed, elements overlap and some text looks out of place
 
 **Evidence:** Screenshots at each breakpoint
+<img width="1365" height="708" alt="TC-COMPAT-001: Chrome Latest Version" src="https://github.com/user-attachments/assets/0228610b-b874-4050-a9b0-f5c6aaf13f6e" />
+
+**Status:** Fail
 
 ---
 
@@ -2552,9 +2662,16 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - CSS renders correctly
 - localStorage functions properly
 
-**Post-conditions:** Firefox compatibility verified
+**Actual Result:**  
+- Visual elements do not render correctly, they appear to overlap specifically on the cart page and the search box palceholder text is not completely visible. 
+- The "remove" text looks out of place (it is not inside its container)
 
-**Evidence:** Screenshots showing functionality
+**Post-conditions:** Firefox compatibility failed, overlap and some text looks out of place
+
+**Evidence:** Firefox compatibility failed, elements overlap and some text looks out of place
+<img width="1313" height="716" alt="TC-COMPAT-002: Firefox Latest Version" src="https://github.com/user-attachments/assets/34a01f6b-ff1a-4b8f-996d-c98d5775cfbe" />
+
+**Status:** Fail
 
 ---
 
@@ -2577,9 +2694,13 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - Date pickers work correctly
 - Paystack modal opens properly
 
+**Expected Result:** No access to Safari browser
+
 **Post-conditions:** Safari compatibility verified
 
 **Evidence:** Screenshots from Safari
+
+**Status:** Blocked - no access to Safari
 
 ---
 
@@ -2600,9 +2721,21 @@ Post-conditions: ESC key functionality inconsistent and broken in main search
 - No Edge-specific issues
 - Compatible with Chromium-based Edge
 
-**Post-conditions:** Edge compatibility verified
+**Actual Result:**
+- On mobile view, visual elements do not render correctly, they appear to overlap specifically on the cart page and the search box palceholder text is not completely visible. 
+- The "remove" text looks out of place (it is not inside its container).
+- Payment stuck on processing (mobile, tablet and desktop view).
+- DevTools compatibility issues (“-webkit-text-size-adjust“, “iframe[allowpaymentrequest], “meta[name=theme-color]“) - mobile, tablet and desktop view.
+
+**Post-conditions:** Edge compatibility failed, overlap and some text looks out of place, payment stuck on processing
 
 **Evidence:** Screenshots from Edge
+<img width="1358" height="712" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/8aa7f331-7c9a-46b7-8bb1-e4c10e6d5397" />
+<img width="1357" height="711" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/f7c47941-b29a-4bde-8dde-31f75421d4f8" />
+<img width="1363" height="722" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/76fee4f3-8618-4cae-a619-9f651a665e37" />
+<img width="1365" height="726" alt="TC-COMPAT-004: Edge Latest Version" src="https://github.com/user-attachments/assets/251653d5-8679-4836-b60a-dc228aeca10f" />
+
+**Status:** Fail  
 
 ---
 
