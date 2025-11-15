@@ -55,6 +55,7 @@
 <img width="261" height="426" alt="TC-A11Y-001 Keyboard Navigation - Tab Order2" src="https://github.com/user-attachments/assets/3ec72f83-f5a3-4593-8d8f-6b5bc6303342" />
 <img width="302" height="504" alt="TC-A11Y-001 Keyboard Navigation - Tab Order1" src="https://github.com/user-attachments/assets/d0b2b530-b82e-425e-bf60-3070f547fbac" />
 [screen-capture.webm](https://github.com/user-attachments/assets/4a000f0c-8715-4ac6-96d4-066fd51810b1)
+[TC-A11Y-003 ESC Key Clears Search .webm](https://github.com/user-attachments/assets/0d50b583-7ce4-4032-8b69-49c37a88dc56)
 
 
 
