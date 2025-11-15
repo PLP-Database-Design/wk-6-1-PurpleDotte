@@ -360,13 +360,24 @@ Post-conditions: Diacritic testing not possible with current catalog content
 - Sort indicator shows active sort field and direction
 - Ties are broken by stable sort (original order maintained)
 
-**Post-conditions:** no price dropdown button found
+**Actual Result:**
 
-**Actual Result:** i was unable to sort book by prices,because  there is no price dropdown button
+No sort functionality available - no "Sort by Price" dropdown button found
+
+ Cannot sort books by price - missing sort feature entirely
+
+ Books remain in default order - no sorting options visible in UI
+
+ Test blocked at Step 2 - prerequisite feature not implemented
+
+Post-conditions: Sort functionality not available
+
+
  
 **Evidence:** Screenshot of sorted results
 <img width="756" height="635" alt="TC-CAT-005 Sort by Price - Ascending" src="https://github.com/user-attachments/assets/190f42a7-6aff-4677-9dfc-0acb14950b2d" />
 ---
+**status** fail
 
 ### TC-CAT-006: Image Lazy Loading (INTENTIONAL DEFECT)
 **Priority:** Medium  
@@ -398,6 +409,9 @@ Post-conditions: Diacritic testing not possible with current catalog content
 ---<img width="1256" height="683" alt="### TC-CAT-006 Image Lazy Loading (INTENTIONAL DEFECT) mobile" src="https://github.com/user-attachments/assets/f3b5e01f-fd5a-471c-ba67-bbfc7b203b69" />
 <img width="1357" height="716" alt="### TC-CAT-006 Image Lazy Loading (INTENTIONAL DEFECT)  desktop" src="https://github.com/user-attachments/assets/8c1dec24-6e44-4cae-9d6e-d71fdde0d1df" />
 
+
+**status**passed
+
 ## 2. CART & CHECKOUT TEST CASES
 
 ### TC-CART-001: Add Item to Cart
@@ -424,6 +438,7 @@ Post-conditions: Diacritic testing not possible with current catalog content
 
 ---<img width="1335" height="604" alt="TC-CART-001 Add Item to Cart" src="https://github.com/user-attachments/assets/0b69702a-cec3-4741-91ac-03209b4b5955" />
 
+**status** passed
 
 ### TC-CART-002: Update Cart Quantity
 **Priority:** High  
@@ -450,6 +465,7 @@ Post-conditions: Diacritic testing not possible with current catalog content
 
 ---<img width="1106" height="595" alt="TC-CART-002 Update Cart Quantity" src="https://github.com/user-attachments/assets/0848e07c-d725-4924-8188-c728ba5c61dd" />
 
+ **status**passed
 
 ### TC-CART-003: Stock Limit Enforcement
 **Priority:** High  
@@ -478,6 +494,8 @@ Post-conditions: Diacritic testing not possible with current catalog content
 
 ---<img width="1201" height="537" alt="TC-CART-003 Stock Limit Enforcement" src="https://github.com/user-attachments/assets/01637c6f-c86a-4c64-9c31-dfa2eb1c56a8" />
 
+   **status** failed
+   
 ### TC-CART-004: Mini-Cart Stock Race Condition (INTENTIONAL DEFECT)
 **Priority:** Medium  
 **FR Code:** FR-O01  
@@ -504,6 +522,7 @@ Post-conditions: Diacritic testing not possible with current catalog content
 
 ---<img width="1060" height="678" alt="TC-CART-004 Mini-Cart Stock Race Condition (INTENTIONAL DEFECT)2" src="https://github.com/user-attachments/assets/eb6e3119-0b81-40bb-b61e-248a52bf9587" />
 
+**status** failed or blocked
 
 ### TC-CART-005: Rounding Variance (INTENTIONAL DEFECT)
 **Priority:** Medium  
@@ -3069,6 +3088,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
