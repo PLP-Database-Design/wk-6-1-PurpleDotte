@@ -1984,11 +1984,27 @@ Post-conditions: Search and book content accessible to screen readers
 - Focus remains on search input
 - Full catalog redisplays
 
-**Post-conditions:** ESC clears search
+**Actual Result:**
+ Non-functional search box (upper) - ESC key works (clears text)
+
+ Functional search box (main) - ESC key does NOT clear search text
+
+ ESC key behavior inconsistent between search boxes
+
+ Main search functionality broken for ESC accessibility feature
+
+ Focus remains on search input after ESC in both cases
+
+Post-conditions: ESC key functionality inconsistent and broken in main search
+ 
+
+ 
 
 **Evidence:** Screenshot showing cleared search
 
----
+---[TC-A11Y-003 ESC Key Clears Search .webm](https://github.com/user-attachments/assets/0d50b583-7ce4-4032-8b69-49c37a88dc56)
+
+**status** failed
 
 ### TC-A11Y-004: Form Validation - Error Announcement
 **Priority:** High  
@@ -2880,6 +2896,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
