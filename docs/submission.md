@@ -520,9 +520,9 @@ Post-conditions: Sort functionality not available
 
 **Evidence:** Screenshot/video of stock limit bypass in mini-cart
 
----<img width="1060" height="678" alt="TC-CART-004 Mini-Cart Stock Race Condition (INTENTIONAL DEFECT)2" src="https://github.com/user-attachments/assets/eb6e3119-0b81-40bb-b61e-248a52bf9587" />
+<img width="1160" height="503" alt="TC-CART-004 Mini-Cart Stock Race Condition (INTENTIONAL DEFECT)" src="https://github.com/user-attachments/assets/505eae61-ae35-4d77-a3f5-09b7a4dd5ca6" />
 
-**status** failed or blocked
+**status** failed or cannot verified
 
 ### TC-CART-005: Rounding Variance (INTENTIONAL DEFECT)
 **Priority:** Medium  
@@ -3088,6 +3088,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
