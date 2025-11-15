@@ -1901,11 +1901,29 @@ Post-conditions: Notification and admin systems not available
 - No focus traps
 - Can reach all interactive elements via keyboard
 
-**Post-conditions:** Keyboard navigation works
+**Actual Result:**
+
+Focus moves in logical order through interactive elements
+
+Focus indicators visible with clear outlines
+
+ No focus traps detected
+
+ All interactive elements reachable via keyboard:
+
+** cart button
+
+**"Buy Now" buttons on all book cards
+
+✅ Keyboard navigation works correctly throughout catalog page
+
+Post-conditions: Keyboard navigation functioning properly
 
 **Evidence:** Screenshot showing focus indicators
 
----
+---<img width="261" height="426" alt="TC-A11Y-001 Keyboard Navigation - Tab Order2" src="https://github.com/user-attachments/assets/3ec72f83-f5a3-4593-8d8f-6b5bc6303342" />
+<img width="302" height="504" alt="TC-A11Y-001 Keyboard Navigation - Tab Order1" src="https://github.com/user-attachments/assets/d0b2b530-b82e-425e-bf60-3070f547fbac" />
+
 
 ### TC-A11Y-002: Screen Reader - Search Label
 **Priority:** High  
@@ -2845,6 +2863,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
