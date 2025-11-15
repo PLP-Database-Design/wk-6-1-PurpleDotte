@@ -1924,7 +1924,8 @@ Post-conditions: Keyboard navigation functioning properly
 ---<img width="261" height="426" alt="TC-A11Y-001 Keyboard Navigation - Tab Order2" src="https://github.com/user-attachments/assets/3ec72f83-f5a3-4593-8d8f-6b5bc6303342" />
 <img width="302" height="504" alt="TC-A11Y-001 Keyboard Navigation - Tab Order1" src="https://github.com/user-attachments/assets/d0b2b530-b82e-425e-bf60-3070f547fbac" />
 
-
+**status** passed
+ 
 ### TC-A11Y-002: Screen Reader - Search Label
 **Priority:** High  
 **FR Code:** FR-X01  
@@ -1943,11 +1944,27 @@ Post-conditions: Keyboard navigation functioning properly
 - Label properly associated with input
 - Input purpose clear
 
-**Post-conditions:** Search accessible to screen readers
+**Actual Result:**
+
+
+
+ Screen reader announces "Search book" when search field is focused
+
+ Book descriptions read aloud when hovering/navigating to books
+
+ Missing detailed description - should announce "Search books by title, author, or description"
+
+ Basic accessibility works - screen reader can navigate and describe content
+
+ Book information accessible - titles, authors, prices read correctly
+
+Post-conditions: Search and book content accessible to screen readers
 
 **Evidence:** Audio recording or transcript of screen reader
 
----
+---[screen-capture.webm](https://github.com/user-attachments/assets/4a000f0c-8715-4ac6-96d4-066fd51810b1)
+
+**status** partially passed
 
 ### TC-A11Y-003: ESC Key Clears Search
 **Priority:** Medium  
@@ -2863,6 +2880,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
