@@ -125,7 +125,7 @@
 - Impact: Users may not find books if they don't use the exact accent marks
 - Workaround: Users must search with exact diacritics as stored in database
 - Recommendation: Implement Unicode normalization (NFD/NFC) for search queries
-
+`
 **Found By:** Deborah  
 **Date Found:** November 8, 2025  
 **Assigned To:** N/A (Intentional defect for testing purposes)
@@ -134,174 +134,54 @@
 
 ## Defects
 
-### BUG-SEC-007: HTTPS Enforcement not enabled
-**Severity:** Critical  
+### BUG-PERF-003: Time to Interactive (TTI)
+**Severity:** Minor  
 **Priority:** High  
-**Status:** Open  
-**Component:** Security  
-**Affected FR(s):** FR-X04  
-**Labels:** security  
+**Status:** Failed  
+**Component:** Performance  
+**Affected FR(s):** FR-X02  
+**Labels:** perf  
 **Environment:**
 - Browser: Firefox 144.0.2
-- OS: Windows 11
+- OS: Windows 11  
 - Device: Desktop
 - Viewport: 1920x1080
 - Currency: ZAR
 
-**Linked Test Case:** TC-SEC-007
+**Linked Test Case:** TC-PERF-003
 
 **Steps to Reproduce:**
-1. Access BookStore site via HTTP (Firefox browser)
-2. Check for redirect to HTTPS
-3. Verify all resources load over HTTPS
+1. Render BookStore (Chrome) - Catalog page
+2. Open DevTools (press "f12" on your keyboard)
+3. Click "Lighthouse" tab
+4. 
 
 **Expected Result:**
-- HTTP requests redirect to HTTPS
-- All assets (images, scripts, styles) load via HTTPS
-- No mixed content warnings
-- Paystack script loads securely
+[What should happen]
 
 **Actual Result:**
-- HTTP requests does not redirect to HTTPS
-- All assets (images, scripts, styles) don’t load via HTTPS
-- Paystack script loads insecurely
+[What actually happens]
 
-**Evidence:**  
----<img width="1302" height="713" alt="TC-SEC-007: HTTPS Enforcement" src="https://github.com/user-attachments/assets/1836f3c4-ee03-4fcc-b858-25c7dbe4ad99" />
+**Evidence:**
+- Screenshot: `evidence/screenshots/bug-001-screenshot.png`
+- Video: `evidence/videos/bug-001-video.mp4`
+- Logs: [Any console errors or network logs]
 
 **Notes:**
 [Additional context, workarounds, impact assessment]
 
-**Found By:** Cindy  
-**Date Found:** 10 Nov 2025  
-**Assigned To:** [Developer - N/A for this project]  
+**Found By:** [Deborah / Cindy / Dennis]  
+**Date Found:** [Date]  
+**Assigned To:** [Developer - N/A for this project]
 
 ---
-
-### BUG-PERF-001: Poor Performance Audit on Catalog Page: Largest Contentful Paint (LCP)
-**Severity:** Minor  
-**Priority:** High
-**Status:** Open  
-**Component:** Performance
-**Affected FR(s):** FR-X02  
-**Labels:** perf  
-**Environment:**
-- Browser: Chrome 142.0.7444.135
-- OS: Windows 11
-- Device: Desktop
-- Viewport: 1920x1080
-- Currency: ZAR
-
-**Linked Test Case:** TC-PERF-001
-
-**Steps to Reproduce:**
-1. Render BookStore web app (Chrome)
-2. Open Chrome DevTools
-3. Navigate to Lighthouse tab
-4. Select Desktop, Performance category
-5. Run audit on catalog page
-6. Check LCP metric
-
-**Expected Result:**
-- Score: Good (green)
-- LCP ≤ 2.5 seconds on desktop
-- Main content (hero image or first book cards) loads quickly
-
-**Actual Result:**  
-Score: Needs improvement (orange)
-
-**Evidence:**  
----(TC-PERF-001: Largest Contentful Paint (LCP) - Desktop)https://github.com/user-attachments/assets/f4bcb4ca-6bfc-472e-a7a1-386e85938e38
-
-**Found By:** Cindy  
-**Date Found:** 10 Nov 2025  
-**Assigned To:** [Developer - N/A for this project]  
-
----
-
-### BUG-PERF-002: Poor Performance Audit on Catalog Page: Largest Contentful Paint (LCP) - Mobile
-**Severity:** Minor  
-**Priority:** High  
-**Status:** Open  
-**Component:** Performance  
-**Affected FR(s):** FR-X02  
-**Labels:** perf  
-**Environment:**  
-- Browser: Chrome 142.0.7444.135
-- OS: Windows 11
-- Device: Desktop
-- Viewport: 1920x1080
-- Currency: ZAR
-
-**Linked Test Case:** TC-PERF-002
-
-**Steps to Reproduce:**
-1. Render BookStore web app
-2. Open Chrome DevTools
-3. Set device to Mobile
-4. Enable throttling: Slow 4G
-5. Run Lighthouse audit
-6. Check LCP metric
-
-**Expected Result:**  
-- LCP ≤ 3.0 seconds on mobile
-- Critical rendering path optimized
-- Score: Good (green) or Needs Improvement (yellow)
-
-**Actual Result:**  
-LCP > 3.0 seconds on mobile
-
-**Evidence:**  
----(TC-PERF-002: Largest Contentful Paint (LCP) - Mobile)https://github.com/user-attachments/assets/c08fe479-d0bd-4a31-b323-06c62cfd0f6c
-
-**Found By:** Cindy  
-**Date Found:** 10 Nov 2025  
-**Assigned To:** [Developer - N/A for this project]  
-
----
-
-### BUG-PERF-003: Poor Performance Audit on Catalog Page: Time to Interactive (TTI) replaced by Total Blocking Time (TBT) on Chrome
-**Severity:** Minor  
-**Priority:** High  
-**Status:** Open  
-**Component:** Performance  
-**Affected FR(s):** FR-X02  
-**Labels:** perf  
-**Environment:**  
-- Browser: Chrome 142.0.7444.135
-- OS: Windows 11
-- Device: Desktop
-- Viewport: 1920x1080
-- Currency: ZAR
-
-**Linked Test Case:** TC-PERF-003  
-
-**Steps to Reproduce:**  
-1. Render BookStore web app
-2. Open Chrome DevTools
-3. Run Lighthouse audit on checkout page
-4. Test interactivity timing (replaced by Total Blocking Time (TBT) on Chrome)
-
-**Expected Result:**  
-- TTI (TBT) ≤ 1 second on critical interactions
-- Page responds quickly to user input
-- No long tasks blocking main thread
-
-**Actual Result:** TTI (TBT) > 1 second on critical interactions  
-
-**Evidence:**  
----(TC-PERF-003: Time to Interactive (TTI))https://github.com/user-attachments/assets/83cd3c81-f6bb-4f67-be5e-a8f81073c5c9
-
-**Found By:** Cindy  
-**Date Found:** 10 Nov 2025  
-**Assigned To:** [Developer - N/A for this project]  
 
 ---
 
 ### BUG-A11Y-005: Modal Focus (INTENTIONAL DEFECT) Lacks Accessibility (Keyboard Shortcuts Don't Work on Modal)
 **Severity:** Major  
 **Priority:** High  
-**Status:** Open  
+**Status:** Fail  
 **Component:** A11y  
 **Affected FR(s):** FR-X01  
 **Labels:** a11y  
@@ -358,7 +238,7 @@ LCP > 3.0 seconds on mobile
 ### BUG-A11Y-007: Interactive Icons Fail Colour Contrast (WCAG AA) Standard Requirements
 **Severity:** Minor  
 **Priority:** High  
-**Status:** Open  
+**Status:** Fail  
 **Component:** A11y  
 **Affected FR(s):** TC-A11Y-007  
 **Labels:** a11y  
@@ -398,10 +278,409 @@ LCP > 3.0 seconds on mobile
 
 ---
 
+### BUG-PERF-001: Poor Performance Audit on Catalog Page: Largest Contentful Paint (LCP)
+**Severity:** Minor  
+**Priority:** High
+**Status:** Fail  
+**Component:** Performance
+**Affected FR(s):** FR-X02  
+**Labels:** perf  
+**Environment:**
+- Browser: Chrome 142.0.7444.135
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-PERF-001
+
+**Steps to Reproduce:**
+1. Render BookStore web app (Chrome)
+2. Open Chrome DevTools
+3. Navigate to Lighthouse tab
+4. Select Desktop, Performance category
+5. Run audit on catalog page
+6. Check LCP metric
+
+**Expected Result:**
+- Score: Good (green)
+- LCP ≤ 2.5 seconds on desktop
+- Main content (hero image or first book cards) loads quickly
+
+**Actual Result:**  
+Score: Needs improvement (orange)
+
+**Evidence:**  
+---(TC-PERF-001: Largest Contentful Paint (LCP) - Desktop)https://github.com/user-attachments/assets/f4bcb4ca-6bfc-472e-a7a1-386e85938e38
+
+**Found By:** Cindy  
+**Date Found:** 10 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+---
+
+### BUG-PERF-002: Poor Performance Audit on Catalog Page: Largest Contentful Paint (LCP) - Mobile
+**Severity:** Minor  
+**Priority:** High  
+**Status:** Fail  
+**Component:** Performance  
+**Affected FR(s):** FR-X02  
+**Labels:** perf  
+**Environment:**  
+- Browser: Chrome 142.0.7444.135
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-PERF-002
+
+**Steps to Reproduce:**
+1. Render BookStore web app
+2. Open Chrome DevTools
+3. Set device to Mobile
+4. Enable throttling: Slow 4G
+5. Run Lighthouse audit
+6. Check LCP metric
+
+**Expected Result:**  
+- LCP ≤ 3.0 seconds on mobile
+- Critical rendering path optimized
+- Score: Good (green) or Needs Improvement (yellow)
+
+**Actual Result:**  
+LCP > 3.0 seconds on mobile
+
+**Evidence:**  
+---(TC-PERF-002: Largest Contentful Paint (LCP) - Mobile)https://github.com/user-attachments/assets/c08fe479-d0bd-4a31-b323-06c62cfd0f6c
+
+**Found By:** Cindy  
+**Date Found:** 10 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+---
+
+### BUG-PERF-003: Poor Performance Audit on Catalog Page: Time to Interactive (TTI) replaced by Total Blocking Time (TBT) on Chrome
+**Severity:** Minor  
+**Priority:** High  
+**Status:** Fail  
+**Component:** Performance  
+**Affected FR(s):** FR-X02  
+**Labels:** perf  
+**Environment:**  
+- Browser: Chrome 142.0.7444.135
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-PERF-003  
+
+**Steps to Reproduce:**  
+1. Render BookStore web app
+2. Open Chrome DevTools
+3. Run Lighthouse audit on checkout page
+4. Test interactivity timing (replaced by Total Blocking Time (TBT) on Chrome)
+
+**Expected Result:**  
+- TTI (TBT) ≤ 1 second on critical interactions
+- Page responds quickly to user input
+- No long tasks blocking main thread
+
+**Actual Result:** TTI (TBT) > 1 second on critical interactions  
+
+**Evidence:**  
+---(TC-PERF-003: Time to Interactive (TTI))https://github.com/user-attachments/assets/83cd3c81-f6bb-4f67-be5e-a8f81073c5c9
+
+**Found By:** Cindy  
+**Date Found:** 10 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+---
+
+### BUG-PERF-006: PageSpeed Insights Score
+**Severity:** Minor  
+**Priority:** Medium  
+**Status:** Fail  
+**Component:** Performance  
+**Affected FR(s):** FR-X02  
+**Labels:** perf  
+**Environment:**
+- Browser: Firefox 144.0.2
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-PERF-006
+
+**Steps to Reproduce:**
+1. Navigate to PageSpeed Insights (https://pagespeed.web.dev/)
+2. Enter application URL (http://localhost:3000)
+3. Run analysis for Mobile and Desktop
+4. Review scores and recommendations
+
+**Expected Result:**
+- Performance score ≥ 70 (yellow) or ≥ 90 (green)
+- Core Web Vitals pass
+- Actionable recommendations documented
+
+**Actual Result:**
+- https://pagespeed.web.dev/ returned "Unable to resolve http://localhost:3000/"
+
+**Evidence:**
+---<img width="1350" height="695" alt="TC-PERF-006_PageSpeed Insights Score" src="https://github.com/user-attachments/assets/697f96f3-92dc-482e-be03-422b84018486" />
+
+**Notes:**
+[Additional context, workarounds, impact assessment]
+
+**Found By:** Cindy  
+**Date Found:** 15 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]
+
+---
+
+### BUG-SEC-001: UGC Script Injection Prevention
+**Severity:** Critical
+**Priority:** Critical
+**Status:** Blocked  
+**Component:** Security  
+**Affected FR(s):** FR-S01  
+**Labels:** security  
+**Environment:**
+- Browser: Firefox 144.0.2
+- OS: Windows 11  
+- Device: Desktop  
+- Viewport: 1920x1080  
+- Currency: ZAR
+
+**Linked Test Case:** TC-SEC-001  
+
+**Steps to Reproduce:**  
+1. Render BookStore (Firefox)
+2. Navigate to review form
+3. Enter: `<script>alert('XSS')</script>Test Review`
+4. Submit review
+5. View rendered review
+
+**Expected Result:**
+- Script tags stripped or escaped
+- Rendered as plain text: "<script>alert('XSS')</script>Test Review"
+- No JavaScript execution
+- HTML entities escaped
+
+**Actual Result:**
+- Cannot execute test - Review page does not allow user to enter/type a review. Review page only allows user to view item oder details and proceed to payment.
+- No Q&A page
+
+**Evidence:**
+---<img width="1308" height="677" alt="TC-SEC-001_UGC Script Injection Prevention" src="https://github.com/user-attachments/assets/353647bf-b3df-4a82-8882-a364a6165acc" />
+
+**Notes:**
+[Additional context, workarounds, impact assessment]
+
+**Found By:** Cindy  
+**Date Found:** 15 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]
+
+---
+
+### BUG-SEC-003: XSS via Image URL
+**Severity:** Critical
+**Priority:** High  
+**Status:** Blocked  
+**Component:** Security  
+**Affected FR(s):** FR-S01  
+**Labels:** security  
+**Environment:**
+- Browser: Firefox 144.0.2
+- OS: Windows 11  
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR  
+
+**Linked Test Case:** TC-SEC-003
+
+**Steps to Reproduce:**
+1. Render BookStore (Firefox)
+2. Open DevTools (press "f12" on your keyboard)
+3. Click "Storage"tab
+4. Click "Local Storage" dropdown arrow
+5. Click "Localhost:3000"  
+6. Click "app.user"
+7. Change value to {"role":"admin"}
+8. Navigate to admin catalog management
+9. Attempt to add book with malicious image URL: `javascript:alert('XSS')`
+10. Save and view book
+
+**Expected Result:**
+- Invalid URL rejected
+- Error message: "Please enter a valid image URL"
+- Only http/https URLs accepted
+
+**Actual Result:**
+Cannot execute test:
+- Admin panel not found (as confirmed in TC-ADMIN-001)
+- No admin catalog management available
+
+**Evidence:**
+---<img width="1311" height="712" alt="TC-SEC-003_XSS via Image URL" src="https://github.com/user-attachments/assets/3c3b2224-5d66-479b-b2c8-0c8d614e06d6" />
+
+**Notes:**
+[Additional context, workarounds, impact assessment]
+
+**Found By:** Cindy  
+**Date Found:** 15 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]
+
+---
+
+### BUG-SEC-004: URL Scheme Whitelist Validation
+**Severity:** Major  
+**Priority:** High  
+**Status:** Blocked  
+**Component:** Security  
+**Affected FR(s):** FR-S02  
+**Labels:** security  
+**Environment:**  
+- Browser: Firefox 144.0.2
+- OS: Windows 11  
+- Device: Desktop  
+- Viewport: 1920x1080  
+- Currency: ZAR
+
+**Linked Test Case:** TC-SEC-004
+
+**Steps to Reproduce:**
+1. Render BookStore (Firefox)
+2. Proceed to Review or Q&A page
+3. Input various URL schemes:
+  - `https://example.com` (should work)
+  - `http://example.com` (should work)
+  - `javascript:alert('XSS')` (should block)
+  - `data:text/html,<script>alert('XSS')</script>` (should block)
+  - `ftp://example.com` (should block)
+4. Submit each and observe behavior  
+
+**Expected Result:**  
+- Only http:// and https:// schemes allowed
+- All other schemes blocked or stripped
+- Clear error message for invalid schemes
+
+**Actual Result:**
+- Review page: user cannot enter/write a review, user is only able to view item details and "Proceed to Payment" button
+- No Q&A page
+
+**Evidence:**
+---<img width="1307" height="701" alt="TC-SEC-004_URL Scheme Whitelist Validation" src="https://github.com/user-attachments/assets/86250d72-976d-4abd-8d00-a039394cfcab" />
+
+**Notes:**
+[Additional context, workarounds, impact assessment]
+
+**Found By:** Cindy  
+**Date Found:** 15 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]
+
+---
+
+### BUG-SEC-006: JSON Parse Error Handling
+**Severity:** Minor  
+**Priority:** Medium  
+**Status:** Fail  
+**Component:** Security  
+**Affected FR(s):** FR-S03  
+**Labels:** security
+**Environment:**
+- Browser: Firefox 144.0.2  
+- OS: Windows 11  
+- Device: Desktop  
+- Viewport: 1920x1080  
+- Currency: ZAR
+
+**Linked Test Case:** TC-SEC-006  
+
+**Steps to Reproduce:**
+1. Render BookStore (Firefox)
+2. Open DevTools (press "f12" on your keyboard)
+3. Click "Storage" tab
+4. Click "Local Storage" dropdown arrow
+5. Click "app.cart" value
+6. Enter "{invalid json')"
+7. press "enter" on your keyboard
+8. Refresh application
+9. Observe error handling  
+
+**Expected Result:**  
+- Application handles parse error gracefully
+- Falls back to empty/default state
+- Error logged but doesn't crash app
+- User can continue using app
+
+**Actual Result:**
+- User is not able to contine using the app (the app crashes)
+- Application handles parse error gracefully
+- Does not fall back to empty/default state
+
+**Evidence:**
+---<img width="1305" height="706" alt="TC-SEC-006_SON Parse Error Handling" src="https://github.com/user-attachments/assets/d1b2994c-9f95-41ef-bfe0-d55e8f42a7d0" />
+
+**Notes:**
+[Additional context, workarounds, impact assessment]
+
+**Found By:** Cindy  
+**Date Found:** 15 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]
+
+---
+
+### BUG-SEC-007: HTTPS Enforcement not enabled
+**Severity:** Critical  
+**Priority:** High  
+**Status:** Fail  
+**Component:** Security  
+**Affected FR(s):** FR-X04  
+**Labels:** security  
+**Environment:**
+- Browser: Firefox 144.0.2
+- OS: Windows 11
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-SEC-007
+
+**Steps to Reproduce:**
+1. Access BookStore site via HTTP (Firefox browser)
+2. Check for redirect to HTTPS
+3. Verify all resources load over HTTPS
+
+**Expected Result:**
+- HTTP requests redirect to HTTPS
+- All assets (images, scripts, styles) load via HTTPS
+- No mixed content warnings
+- Paystack script loads securely
+
+**Actual Result:**
+- HTTP requests does not redirect to HTTPS
+- All assets (images, scripts, styles) don’t load via HTTPS
+- Paystack script loads insecurely
+
+**Evidence:**  
+---<img width="1302" height="713" alt="TC-SEC-007: HTTPS Enforcement" src="https://github.com/user-attachments/assets/1836f3c4-ee03-4fcc-b858-25c7dbe4ad99" />
+
+**Notes:**
+[Additional context, workarounds, impact assessment]
+
+**Found By:** Cindy  
+**Date Found:** 10 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]  
+
+---
+
 ### BUG-COMPAT-001: Chrome - Responsive Design on Mobile (Visual Elements Overlap)
 **Severity:** Major  
 **Priority:** High  
-**Status:** Open  
+**Status:** Fail  
 **Component:** Compatibility  
 **Affected FR(s):** FR-X03  
 **Labels:** compatibility  
@@ -445,7 +724,7 @@ Visual elements do not render correctly, they appear to overlap specifically on 
 ### BUG-COMPAT-002: Firefox - Responsive Design on Mobile (Visual Elements Overlap)
 **Severity:** Major  
 **Priority:** High  
-**Status:** Open  
+**Status:** Fail  
 **Component:** Compatibility  
 **Affected FR(s):** FR-X03  
 **Labels:** compatibility  
@@ -482,6 +761,49 @@ Visual elements do not render correctly, they appear to overlap specifically on 
 **Found By:** Cindy  
 **Date Found:** 13 Nov 2025  
 **Assigned To:** [Developer - N/A for this project]  
+
+---
+
+### BUG-COMPAT-003: Safari Latest Version
+**Severity:** Major  
+**Priority:** High  
+**Status:** Blocked  
+**Component:** Compatibility  
+**Affected FR(s):** FR-X03  
+**Labels:** compatibility  
+**Environment:**
+- Browser: Safari 17
+- OS: iOS 17
+- Device: Desktop
+- Viewport: 1920x1080
+- Currency: ZAR
+
+**Linked Test Case:** TC-COMPAT-003
+
+**Steps to Reproduce:**
+1. Open application in Safari
+2. Test core flows
+3. Check for Safari-specific issues
+4. Test on iOS Safari if possible
+
+**Expected Result:**  
+- All features functional
+- No Safari rendering issues
+- Date pickers work correctly
+- Paystack modal opens properly
+
+**Actual Result:**  
+- No access to Safari browser
+
+**Evidence:**  
+- No access to Safari browser
+
+**Notes:**
+[Additional context, workarounds, impact assessment]
+
+**Found By:** Cindy  
+**Date Found:** 15 Nov 2025  
+**Assigned To:** [Developer - N/A for this project]
 
 ---
 
