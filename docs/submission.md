@@ -2320,7 +2320,7 @@ Full board configuration and issue creation and test cases will begin in week tw
 - Cannot execute test - Review page does not allow user to enter/type a review. Review page only allows user to view item oder details and proceed to payment.
 - No Q&A page
 
-**Post-conditions:** 
+**Post-conditions:**  
 - Test blocked - User unable to enter/type a review
 
 **Evidence:** Screenshot showing review page without the necessary fields to allow user to enter/type a review. No Q&A page
@@ -2386,10 +2386,10 @@ Cannot execute test:
 - Admin panel not found (as confirmed in TC-ADMIN-001)
 - No admin catalog management available
 
-**Post-conditions:** 
+**Post-conditions:**  
 - Test blocked - Prerequisite feature missing
 
-**Evidence:** Screenshot of validation error
+**Evidence:**  
 
 ---<img width="1311" height="712" alt="TC-SEC-003_XSS via Image URL" src="https://github.com/user-attachments/assets/3c3b2224-5d66-479b-b2c8-0c8d614e06d6" />
 
@@ -2454,16 +2454,19 @@ Cannot execute test:
 - Alternative action suggested (clear cart, checkout)
 
 **Actual Result:**  
-- User is not alerted if the storage limit (1e+308/infinity) is reached
+- Graceful error message: "Storage limit reached"
+- Application doesn't crash
+- User informed and can continue
+- Alternative action suggested (clear cart, checkout)
 
 **Post-conditions:**  
-- Quota errors not handled gracefully
+- Quota errors handled gracefully
 
 **Evidence:** Screenshot of quota error message
 
----<img width="1305" height="627" alt="TC-SEC-005_localStorage Quota Handling" src="https://github.com/user-attachments/assets/42e80bca-94df-4594-8120-f83dc0ac3340" />
+---<img width="1303" height="707" alt="TC-SEC-005_localStorage Quota Handling" src="https://github.com/user-attachments/assets/baf15062-1d49-4fc7-af17-4aa3f7697a2a" />
 
-**Status:** Fail
+**Status:** Pass
 
 ---
 
@@ -2486,14 +2489,12 @@ Cannot execute test:
 - User can continue using app
 
 **Actua Result:**  
-- The error is not logged
-- User is able to contine using the app
+- User is not able to contine using the app (the app crashes)
 - Application handles parse error gracefully
-- Falls back to empty/default state
+- Does not fall back to empty/default state
 
 **Post-conditions:**  
-- No error is logged
-- App continues to work as expected
+- App does not continue to work as expected (crashes)
 
 **Evidence:** No error is logged
 
@@ -2923,23 +2924,7 @@ As you find bugs:
 
 **COMPLETE - ALL 77 TEST CASES INCLUDED**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 ### 🐞 Bug Report (defect log entry)
 - ID: BUG-<area>-<number>
