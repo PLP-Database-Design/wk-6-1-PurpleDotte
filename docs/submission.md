@@ -2921,7 +2921,7 @@ As you find bugs:
 
 ---
 
-**COMPLETE - ALL 88 TEST CASES INCLUDED**
+**COMPLETE - ALL 77 TEST CASES INCLUDED**
 
 
 
@@ -2980,6 +2980,7 @@ As you find bugs:
 - 2–3 top defects with evidence and impact
 - Include a11y/perf highlights (metrics, tools)
 - Recommendations aligned to risk
+
 
 
 
