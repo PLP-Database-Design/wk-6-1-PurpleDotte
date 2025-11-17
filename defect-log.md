@@ -134,48 +134,6 @@
 
 ## Defects
 
-### BUG-PERF-003: Time to Interactive (TTI)
-**Severity:** Minor  
-**Priority:** High  
-**Status:** Failed  
-**Component:** Performance  
-**Affected FR(s):** FR-X02  
-**Labels:** perf  
-**Environment:**
-- Browser: Firefox 144.0.2
-- OS: Windows 11  
-- Device: Desktop
-- Viewport: 1920x1080
-- Currency: ZAR
-
-**Linked Test Case:** TC-PERF-003
-
-**Steps to Reproduce:**
-1. Render BookStore (Chrome) - Catalog page
-2. Open DevTools (press "f12" on your keyboard)
-3. Click "Lighthouse" tab
-4. 
-
-**Expected Result:**
-[What should happen]
-
-**Actual Result:**
-[What actually happens]
-
-**Evidence:**
-- Screenshot: `evidence/screenshots/bug-001-screenshot.png`
-- Video: `evidence/videos/bug-001-video.mp4`
-- Logs: [Any console errors or network logs]
-
-**Notes:**
-[Additional context, workarounds, impact assessment]
-
-**Found By:** [Deborah / Cindy / Dennis]  
-**Date Found:** [Date]  
-**Assigned To:** [Developer - N/A for this project]
-
----
-
 ---
 
 ### BUG-A11Y-005: Modal Focus (INTENTIONAL DEFECT) Lacks Accessibility (Keyboard Shortcuts Don't Work on Modal)
@@ -764,7 +722,7 @@ Visual elements do not render correctly, they appear to overlap specifically on 
 
 ---
 
-### BUG-COMPAT-003: Safari Latest Version
+### BUG-COMPAT-003: Safari Browser Latest Version
 **Severity:** Major  
 **Priority:** High  
 **Status:** Blocked  
