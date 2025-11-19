@@ -286,10 +286,10 @@ Testing was considered complete when the following criteria were evaluated:
 #### Quality Assurance Tools
 | Tool | Version | Purpose | Usage | Owner |
 |------|---------|---------|-------|-------|
-| **axe DevTools** | Latest | Accessibility scanning | 9 accessibility tests | Deborah |
-| **NVDA Screen Reader** | 2024.3 | Screen reader testing | Accessibility validation | Deborah |
+| **axe DevTools** | Latest | Accessibility scanning | 9 accessibility tests | Cindy |
+| **NVDA Screen Reader** | 2024.3 | Screen reader testing | Accessibility validation | Cindy |
 | **Chrome DevTools** | Built-in | Network, performance, debugging | All 77 test cases | All Team |
-| **Firefox DevTools** | Built-in | Browser-specific testing | Compatibility testing | Deborah |
+| **Firefox DevTools** | Built-in | Browser-specific testing | Compatibility testing | Cindy |
 | **Chrome Lighthouse** | Built-in | Performance metrics (LCP, TTI, CLS) | 6 performance tests | Cindy |
 
 #### Project Management Tools
@@ -365,7 +365,7 @@ localStorage.setItem('app.user', JSON.stringify({ role: 'admin' }))
 
 ### 3.9 Environment Stability
 
-**Stability Assessment:**
+**Stability Assessment:**  
 - ✅ **Application:** Stable throughout testing (no crashes)
 - ✅ **Browsers:** No browser-specific crashes
 - ✅ **Paystack Test Environment:** Stable (though payment declined errors)
@@ -381,9 +381,10 @@ localStorage.setItem('app.user', JSON.stringify({ role: 'admin' }))
 ### 4.1 Overall Quality Metrics
 
 ```
+
 ┌─────────────────────────────────────────────────────────┐
 │           BOOK STORE APP - QUALITY SCORECARD            │
-├─────────────────────────────────────────────────────────┤
+├─────────────────────────────────────────────────────────|
 │  Test Execution:           77/77 (100%) ✅              │
 │  Test Pass Rate:           23/77 (30%)  ❌              │
 │  Defects Found:            26 total     ⚠️              │
@@ -393,6 +394,7 @@ localStorage.setItem('app.user', JSON.stringify({ role: 'admin' }))
 │  WCAG 2.1 AA Compliance:   67%          ❌              │
 │  Release Readiness:        0%           ❌              │
 └─────────────────────────────────────────────────────────┘
+
 ```
 
 ### 4.2 Test Execution Metrics

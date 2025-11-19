@@ -127,7 +127,7 @@
 | 7 | TC-ORD-007 | Return window off-by-one (Day 8) | Orders | Medium | Cindy | Blocked | [Evidence](https://github.com/user-attachments/assets/7726325f-943b-464c-97d7-60e67dfb92aa) |
 | 8 | TC-REV-006 | XSS via javascript: URL | Reviews | Critical | Cindy | Blocked | [Evidence](https://github.com/user-attachments/assets/3e14abbe-7f73-43ee-b11a-7660f0479d4b) |
 | 9 | TC-NOT-003 | Notification badge not updated | Notifications | Medium | Cindy | Blocked | [Evidence](https://github.com/user-attachments/assets/f2859c3f-7844-48d1-949b-7e7bce0cb41c) |
-| 10 | TC-A11Y-005 | Modal aria-modal missing | Accessibility | High | Deborah | **FOUND** | [Evidence](https://github.com/user-attachments/assets/9b89fee3-5793-49ec-b166-752e19b18268) |
+| 10 | TC-A11Y-005 | Modal aria-modal missing | Accessibility | High | Cindy | **FOUND** | [Evidence](https://github.com/user-attachments/assets/9b89fee3-5793-49ec-b166-752e19b18268) |
 
 **Intentional Defects Summary:**
 - **Found:** 2/10 (20%) - TC-CAT-006, TC-A11Y-005
