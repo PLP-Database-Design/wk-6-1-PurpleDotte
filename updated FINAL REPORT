@@ -213,8 +213,8 @@ Testing was considered complete when the following criteria were evaluated:
 - ✅ Final Test Report (comprehensive)
 - ✅ Defect Log v2.0 (26 defects documented)
 - ✅ Test Matrix v2.0 (full traceability)
-- ✅ Jira board exports and screenshots
-- ⚠️ Video presentation (completed)
+- ✅ Jira board exports and screenshot. https://bgrkaris05-1762159814901.atlassian.net/jira/software/c/projects/BSAQTR/boards/34
+- ⚠️ Video presentation (completed)https://youtu.be/K9w_7CBnL0w?si=tm1rT9_8Fd9RGlc9
 
 ---
 
@@ -1165,9 +1165,9 @@ Complete Jira board exports with defect tracking available in `/jira-exports` di
 ### Appendix D: Contact Information
 
 **RAID Team:**
-- Dennis (Test Manager): dennis@raid-qa.com
-- Cindy (Risk Analyst): cindy@raid-qa.com
-- Deborah (Test Executer): deborah@raid-qa.com
+- Dennis (Test Manager): bgrkaris05@gmail.com
+- Cindy (Risk Analyst): cindyncube04@gmail.com
+- Deborah (Test Executer): 
 
 ---
 
@@ -1206,7 +1206,7 @@ Complete Jira board exports with defect tracking available in `/jira-exports` di
 | Document Title | Book Store App - Final Test Report |
 | Project Name | Book Store App QA Project |
 | Team Name | RAID |
-| Document Version | 1.0 (Final) |
+| Document Version | 1.1 (Final) |
 | Report Date | November 18, 2025 |
 | Testing Period | November 5 - November 18, 2025 (14 days) |
 | Prepared By | Dennis (Test Manager), Cindy (Risk Analyst), Deborah (Test Executor) |
@@ -1222,7 +1222,7 @@ Complete Jira board exports with defect tracking available in `/jira-exports` di
 - **Defect Log:** RAID Team - Defect Log (v2.0 - 26 defects)
 - **Test Matrix:** RAID Team - Test Matrix (v2.0 - Coverage tracking)
 - **Jira Board:** Book Store App - RAID Team QA Project
-- **Evidence Repository:** /evidence directory (screenshots, videos, logs)
+- **Evidence md:** /evidence directory (screenshots, videos, logs)
 
 ### Acknowledgments
 
