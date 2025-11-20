@@ -29,3 +29,5 @@ Present your testing approach, key findings, and recommendations.
 - Use 1080p recording, 1.25–1.5x zoom on UI text if needed
 - Close unrelated tabs/notifications
 - Keep cursor movements purposeful; zoom on key areas
+
+https://youtu.be/K9w_7CBnL0w?si=tm1rT9_8Fd9RGlc9
