@@ -3,7 +3,7 @@
 
 **Project:** Book Store App — Web Application QA Project  
 **Team Name:** RAID  
-**Report Version:** 1.0 (Final)  
+**Report Version:** 1.1 (Final)  
 **Date:** November 18, 2025  
 **Testing Period:** November 5 - November 18, 2025
 
@@ -777,7 +777,7 @@ Total Test Cases: 77
 
 **Summary:**
 - ✅ Found: 2/10 (20%)
-- ❌ Not Found: 8/10 (20%)
+- ❌ Not Found: 2/10 (20%)
 - 🚫 Blocked: 6/10 (60%)
 
 ---
