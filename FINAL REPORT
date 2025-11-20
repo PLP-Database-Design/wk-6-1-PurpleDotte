@@ -779,7 +779,7 @@ Total Test Cases: 77
 
 **Summary:**
 - ✅ Found: 2/10 (20%)
-- ❌ Not Found: 8/10 (80%)
+- ❌ Not Found: 2/10 (80%)
 - 🚫 Blocked: 6/10 (60%)
 
 ---
@@ -1167,9 +1167,9 @@ Complete Jira board exports with defect tracking available in `/jira-exports` di
 ### Appendix D: Contact Information
 
 **RAID Team:**
-- Dennis (Test Manager): dennis@raid-qa.com
-- Cindy (Risk Analyst): cindy@raid-qa.com
-- Deborah (Test Executer): deborah@raid-qa.com
+- Dennis (Test Manager): bgrkaris05@gmail.com
+- Cindy (Risk Analyst): cindyncube04@gmail.com
+- Deborah (Test Executer): debbiegitahi@gmail.com
 
 ---
 
@@ -1224,7 +1224,7 @@ Complete Jira board exports with defect tracking available in `/jira-exports` di
 - **Defect Log:** RAID Team - Defect Log (v2.0 - 26 defects)
 - **Test Matrix:** RAID Team - Test Matrix (v2.0 - Coverage tracking)
 - **Jira Board:** Book Store App - RAID Team QA Project
-- **Evidence Repository:** /evidence directory (screenshots, videos, logs)
+- **Evidence md:** /evidence directory (screenshots, videos, logs)
 
 ### Acknowledgments
 
@@ -1236,9 +1236,9 @@ Team RAID would like to acknowledge:
 ### Contact Information
 
 **Team RAID:**
-- Dennis (Test Manager): dennis@raid-qa.com
-- Cindy (Risk Analyst): cindy@raid-qa.com
-- Deborah (Test Executor): deborah@raid-qa.com
+- Dennis (Test Manager): bgrkaris05@gmail.com
+- Cindy (Risk Analyst): cindyncube05@gmail.com
+- Deborah (Test Executor): debbiegitahi@gmail.com
 
 **Project Board:** https://bgrkaris05-1762159814901.atlassian.net/jira/software/c/projects/BSAQTR/boards/34
 
